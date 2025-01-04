@@ -1,0 +1,161 @@
+{
+  "chainsOfCommands": [
+    {
+      "indicativo": "Centurion",
+      "range": "Comisionado",
+      "scholl": "Doc.",
+      "names": "Francisco Javier",
+      "lastName": "Moreno",
+      "secondLastName": "Montaño",
+      "rol": "Comisionado de Servicio de Proteccion Federal",
+      "img": "./assets/img/Hierarchical Scale/comisionadoSPF.jpg"
+    },
+    {
+      "indicativo": "Argos",
+      "range": "Comisario Jefe",
+      "scholl": "Lic.",
+      "names": "Daniel Antonio",
+      "lastName": "Ledesma",
+      "secondLastName": "Osuna",
+      "rol": "Direcccion General de Servicio de Seguridad",
+      "img": "./assets/img/Hierarchical Scale/comisarioJefe.jpg"
+    },
+    {
+      "indicativo": "Roble",
+      "range": "Inspector Jefe",
+      "scholl": "Lic.",
+      "names": "Jose Antonio",
+      "lastName": "Cabrera",
+      "secondLastName": "Mendez",
+      "rol": "Coordinador de Despliegue Operativo Centro",
+      "img": "./assets/img/Hierarchical Scale/inspectorJefe.png"
+    },
+    {
+      "indicativo": "Anibal",
+      "range": "Inspector",
+      "scholl": "Mtro.",
+      "names": "Gorge",
+      "lastName": "Garcia",
+      "secondLastName": "Arias",
+      "rol": "Director Operativo de la Region VI",
+      "img": "./assets/img/Hierarchical Scale/inspector.jpg"
+    },
+    {
+      "indicativo": "Aquiles",
+      "range": "Inspector",
+      "scholl": "Lic.",
+      "names": "Francisco",
+      "lastName": "Ramirez",
+      "secondLastName": "Gomez",
+      "rol": "Director de Despliegue Operativo Centro",
+      "img": "./assets/img/Hierarchical Scale/inspector.jpg"
+    },
+    {
+      "indicativo": "Aquiles Gama",
+      "range": "SubInspector",
+      "scholl": "Lic.",
+      "names": "Juan Jose",
+      "lastName": "Tovar",
+      "secondLastName": "Villagran",
+      "rol": "Subdirector Operativo de la Region VI",
+      "img": "./assets/img/Hierarchical Scale/subInspector.png"
+    },
+    {
+      "indicativo": "Aquiles 1",
+      "range": "SubInspector",
+      "scholl": "N/A.",
+      "names": "Lugo Eduardo",
+      "lastName": "Garcia",
+      "secondLastName": "Perez",
+      "rol": "Subdirector Operativo de la Region VI",
+      "img": "./assets/img/Hierarchical Scale/subInspector.png"
+    }
+  ],
+  "hierarchicalScale": {
+    "grade": {
+      "basicScale": [
+        {
+          "gradeScale": "Guardia",
+          "gradeImg": "./assets/img/Hierarchical Scale/guardiaElement.jpg"
+        },
+        {
+          "gradeScale": "Policia",
+          "gradeImg": "./assets/img/Hierarchical Scale/policia.jpg"
+        },
+        {
+          "gradeScale": "Policia Tercero",
+          "gradeImg": "./assets/img/Hierarchical Scale/policiaTercero.png"
+        },
+        {
+          "gradeScale": "Policia Segundo",
+          "gradeImg": "./assets/img/Hierarchical Scale/policiaSegundo.png"
+        },
+        {
+          "gradeScale": "Policia Primero",
+          "gradeImg": "./assets/img/Hierarchical Scale/policiaPrimero.png"
+        }
+      ],
+      "oficial": [
+        {
+          "gradeScale": "SubOficial",
+          "gradeImg": "./assets/img/Hierarchical Scale/subOficial.jpg"
+        },
+        {
+          "gradeScale": "Oficial",
+          "gradeImg": "./assets/img/Hierarchical Scale/oficial.png"
+        },
+        {
+          "gradeScale": "SubInspector",
+          "gradeImg": "./assets/img/Hierarchical Scale/subInspector.png"
+        }
+      ],
+      "inspector": [
+        {
+          "gradeScale": "Inspector",
+          "gradeImg": "./assets/img/Hierarchical Scale/inspector.jpg"
+        },
+        {
+          "gradeScale": "Inspector Jefe",
+          "gradeImg": "./assets/img/Hierarchical Scale/inspectorJefe.png"
+        },
+        {
+          "gradeScale": "Inspector General",
+          "gradeImg": "./assets/img/Hierarchical Scale/inspectorGeneral.png"
+        }
+      ],
+      "comisary": [
+        {
+          "gradeScale": "Comisario",
+          "gradeImg": "./assets/img/Hierarchical Scale/comisario.jpg"
+        },
+        {
+          "gradeScale": "Comisario Jefe",
+          "gradeImg": "./assets/img/Hierarchical Scale/comisarioJefe.jpg"
+        },
+        {
+          "gradeScale": "Comisario General",
+          "gradeImg": "./assets/img/Hierarchical Scale/comisarioGeneral.jpg"
+        },
+        {
+          "gradeScale": "Comisionado General",
+          "gradeImg": "./assets/img/Hierarchical Scale/comisionadoSPF.jpg"
+        }
+      ]
+    }
+  },
+  "basicSPF": {
+    "mision": [
+      "Brindar la prestación de servicios de protección,\n custodia, vigilancia y seguridad \n de bienes e inmuebles federales, y a \n personas físicas o morales, con policías \n  capacitados profesionalmente, a través de \n la aplicación de protocolos de seguridad, \n con el propósito de desempeñar los\n  servicios con calidad para la satisfacción de los \n usuarios. "
+    ],
+    "vision": [
+      "Ser el referente nacional en materia de seguridad, formación y resguardo de bienes y personas, para contribuir a lograr la paz en el país. "
+    ],
+    "exhorto": [
+      "\n !Protección Federal ¡",
+      "\n !servimos a la Patria Con Lealtad ¡",
+      "\n !Servimos a la Patria  con Lealtad ¡",
+      "\n !Protección Federal ¡"
+    ],
+    "lema": ["Seguridad , vigilancia y Protección a los Bienes de la Nacion"]
+  }
+}

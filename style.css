@@ -1,0 +1,381 @@
+:root {
+  --Color-BlueGray: #6b9ac4;
+  --Color-BlueGray: #345995;
+  --Color-BlueDark: #072146;
+  --Color-BlueLight: #00a6fb;
+  --Color-WhiteGhost: #f0eff4;
+  --Color-BlackNight: #141115;
+  --Color-gray: #e5e5e5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  filter: sepia(20%) hue-rotate(10deg) brightness(95%) contrast(90%);
+  /* para filtro azul proteccion */
+  /* color-scheme: light dark; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-weight: 800;
+}
+a {
+  color: var(--Color-WhiteGhost);
+}
+body {
+  /* display: flex; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(to bottom, #345995, #283e64); */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  background-color: var(--Color-WhiteGhost);
+  /* color: var(--Color-WhiteGhost); */
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 0.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sections {
+  margin-top: 1rem;
+  width: 100%;
+}
+#konyImg {
+  width: 25%;
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  animation: konyAnimation 700ms ease-in-out infinite;
+}
+@keyframes konyAnimation {
+  0% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+  }
+}
+.fa-caret-down {
+  color: lightgreen;
+}
+.btns {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  /* z-index: 999; */
+}
+.btns .btn-burguerMenu {
+  /* color: var(--Color-WhiteGhost); */
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--Color-BlueGray);
+  border: 1px solid var(--Color-WhiteGhost);
+  box-shadow: 0 0 7px 2px;
+  /* filter: hue-rotate(50deg); */
+}
+.btns .btn-scrollUp {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+  color: var(--Color-BlueGray);
+  border: 1px solid var(--Color-WhiteGhost);
+  box-shadow: 0 0 7px 2px;
+}
+.btnToggle-tbl {
+  /* background-color: var(--Color-WhiteGhost); */
+  border: 1px solid;
+  color: var(--Color-BlueGray);
+  /* width: 80px;
+  height: 80px;*/
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  position: sticky;
+  top: 3rem;
+  /* bottom: 0; */
+  /* right: 2rem; */
+  /* margin: auto; */
+  margin-left: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  z-index: 5;
+  cursor: pointer;
+}
+.allSections {
+  display: none;
+  /* background-color: rebeccapurple; */
+}
+
+.is-active-asideMenu {
+  background-color: var(--Color-BlueGray);
+  background: linear-gradient(to bottom, #345995, #283e64);
+  width: 90%;
+  height: 90dvh;
+  top: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  z-index: 999;
+}
+.is-active-asideMenu .sectionBtnOptionsMenu {
+  /* background-color: var(--Color-BlueGray); */
+  /* background-color: gold; */
+  /* background: linear-gradient(to top, #345995, #283e64); */
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: -2.5rem;
+  display: flex;
+  /* z-index: 1; */
+  /* ☢️☢️☢️☢️
+    modificar el display none
+   */
+  /* display: none; */
+
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: -10; */
+}
+
+.sectionBtnOptionsMenu button {
+  width: 30%;
+  background-color: var(--Color-BlackNight);
+  color: var(--Color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--Color-WhiteGhost); */
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  border-right: 2px solid;
+  position: relative;
+  transition: all ease;
+}
+.sectionBtnOptionsMenu button:nth-of-type(2) {
+  /* ☢️☢️☢️☢️☢️
+    PARA DESACTIVAR ANIMATION ASIDEmENU
+  */
+  background-color: var(--Color-BlueLight);
+  width: 100%;
+  animation: btnAsideMenuAnimated 1s linear infinite;
+}
+@keyframes btnAsideMenuAnimated {
+  0% {
+    transform: translateY(0.5rem);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+.btn-exitAside {
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin: auto;
+}
+.is-active-asideMenu ul,
+.is-active-asideMenu li,
+.is-active-asideMenu a {
+  /* background-color: var(--Color-BlueLight); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+  /* justify-items: space-around;
+  align-self: center; */
+}
+/* .is-active-asideMenu  */
+.is-active-asideMenu a {
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  font-weight: 300;
+  /* background: linear-gradient(to bottom, #345995, #56789a); */
+
+  /* margin-bottom: 1rem; */
+  /* background-color: #fff; */
+  /* padding: 1rem; */
+  /* color: #00a6fb; */
+}
+.is-active-asideMenu ul:nth-of-type(odd) {
+  display: none;
+}
+.article-chainCommand .container-allCommands {
+  height: 30vh;
+}
+.is-activeArticle-chainCommand .container-allCommands {
+  height: 15vh;
+}
+.container-allCommands img {
+  height: 120px;
+}
+.container-allCommands {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  /* position: relative; */
+}
+.container-allCommands:nth-child(even) {
+  background-color: var(--Color-WhiteGhost);
+}
+.container-allCommands .container-box * {
+  /* background-color: rebeccapurple; */
+  list-style: none;
+
+  /* height: 100%; */
+}
+.box-userChains li:first-of-type {
+  font-weight: 700;
+}
+
+#pruebas {
+  width: 100%;
+  display: inline-block;
+  /* height: 100vh; */
+  background-color: var(--Color-gray);
+  background-color: var(--Color-BlueDark);
+  color: var(--Color-gray);
+}
+/* +++++SECTION HIERARCHICAL SCALE+++++
++++++++++++++++++++++++++++++++++++
+ */
+.sections:nth-of-type(2) {
+  /* background-color: red;
+  display: flex;
+  flex-direction: column; */
+}
+#scaleGrades p {
+  /* height: 15vh; */
+  width: 100%;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vh, 3rem);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  color: var(--Color-WhiteGhost);
+  background-color: var(--Color-BlueDark);
+  padding: 1rem;
+  text-align: center;
+}
+.grades {
+  background-color: var(--Color-BlueDark);
+  display: grid;
+  /* position: relative; */
+  /* flex-direction: column; */
+
+  /* flex-wrap: wrap; */
+  /* display: inline-flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* display: grid; */
+  /* align-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+  /* ☢️☢️ añadir el template row */
+  /* grid-template-rows: 3rem repeat(2, 1fr); */
+  gap: 2vh;
+  padding: 0.5rem;
+}
+.grades .containerGrades {
+  color: white;
+  text-align: center;
+  /* position: relative; */
+}
+.grades figcaption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-3rem);
+  bottom: 0.5rem;
+}
+.grades h3 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vh, 3rem);
+  grid-area: 1/1 /1/4;
+  color: var(--Color-WhiteGhost);
+  /* color: var(--Color-BlueLight); */
+}
+
+.containerGrades img {
+  /* width: 20%; */
+  border: 1px solid var(--Color-WhiteGhost);
+  box-shadow: 0 0 7px 1px var(--Color-BlueLight);
+  border-radius: 0.5rem;
+}
+/* +++++SECTION basic institucional 3to5+++++
++++++++++++++++++++++++++++++++++++
+ */
+.sections:nth-of-type(3) .articles,
+.sections:nth-of-type(4) .articles,
+.sections:nth-of-type(5) .articles {
+  background-color: var(--Color-BlueDark);
+  color: var(--Color-WhiteGhost);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: clamp(1.5rem, 2vh, 3rem);
+  font-weight: 800;
+}
