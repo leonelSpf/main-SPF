@@ -95,7 +95,7 @@ main {
   text-align: center;
   mix-blend-mode: difference;
   cursor: pointer;
-  /* z-index: 999; */
+  z-index: 999;
 }
 .btns .btn-burguerMenu {
   /* color: var(--Color-WhiteGhost); */
@@ -118,6 +118,17 @@ main {
   color: var(--Color-BlueGray);
   border: 1px solid var(--Color-WhiteGhost);
   box-shadow: 0 0 7px 2px;
+  opacity: 1;
+  animation: btnanime 300ms linear forwards;
+}
+@keyframes btnanime {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    color: var(--Color-BlueLight);
+    box-shadow: 0 0 7px 2px;
+  }
 }
 .btnToggle-tbl {
   /* background-color: var(--Color-WhiteGhost); */
@@ -138,6 +149,10 @@ main {
   font-size: 1.5rem;
   z-index: 5;
   cursor: pointer;
+}
+.hidden {
+  display: none;
+  opacity: 0;
 }
 .allSections {
   display: none;
