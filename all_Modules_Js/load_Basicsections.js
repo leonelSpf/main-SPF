@@ -4,9 +4,7 @@ export default function sectionsBasic() {
   fetch(url)
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
     .then((data) => {
-      console.log(data.basicSPF);
       let { mision, vision, exhorto, lema } = data.basicSPF;
-      console.log(exhorto);
       // mision
       const $parrafo = d.createElement("p");
       $parrafo.innerHTML = mision[0];

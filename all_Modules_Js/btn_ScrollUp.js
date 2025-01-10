@@ -2,8 +2,6 @@ export default function btnScrollUp(btn) {
   const d = document,
     w = window,
     $btnScroll = d.querySelector(btn);
-  console.log($btnScroll);
-
   w.addEventListener("scroll", (e) => {
     let scrolltop = w.pageYOffset || d.documentElement.scrollTop;
     if (scrolltop > 600) {
