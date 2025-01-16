@@ -5,8 +5,11 @@ import jerarquia from "./all_Modules_Js/hierarchicall_Scale.js";
 import sectionsBasic from "./all_Modules_Js/load_Basicsections.js";
 import section_chainOfCommands from "./all_Modules_Js/section_chainOfCommands.js";
 import btnScrollUp from "./all_Modules_Js/btn_ScrollUp.js";
+import modalAboutMe from "./all_Modules_Js/modal-AboutMe.js";
+import phrasesRandom from "./all_Modules_Js/phrases_Random.js";
 
 const d = document;
+
 d.addEventListener("DOMContentLoaded", (e) => {
   testings();
 
@@ -16,4 +19,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   asideAllSections();
   sectionsBasic();
   btnScrollUp(".btn-scrollUp");
+  phrasesRandom();
 });
+modalAboutMe(".modal-container");
+// document.querySelector(".ytd-transcript-segment-list-renderer");

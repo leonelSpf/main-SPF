@@ -24,6 +24,16 @@
       <div class="logoImg">
         <img src="./assets/img/Svg_OmarWeb_112x50.svg" alt="" />
       </div>
+      <div class="btn-modalContainer hidden">
+        <img
+          id="headerClosedModalAboutMe"
+          src="./assets/img/yoloImg.png"
+          alt="yoloImg"
+        />
+        <!-- <button>
+          <i class="fa-regular fa-thumbs-up"></i>
+        </button> -->
+      </div>
     </header>
 
     <aside class="allSections">
@@ -62,7 +72,55 @@
 
       <button class="btn-exitAside" type="button">Exit</button>
     </aside>
-
+    <div class="modal-container">
+      <div class="modal-boxPhrases">
+        <!-- <h3>[phrases Random/Audio]</h3> -->
+        <h3>
+          ~"Vivo en el Corazon de Cada Historia Ninguna Puede Escapar de Mi"
+        </h3>
+        <!-- <button><i class="fa-solid fa-circle-play"></i></button> -->
+        <audio id="pruebaAudio" src="./assets/Audio/AudioJhin.mp3"></audio>
+      </div>
+      <div class="modal-aboutMe">
+        <div class="aboutme-box">
+          <img src="./assets/img/yoloImg.png" alt="imgMe" />
+        </div>
+        <div class="aboutme-box">
+          <h3>Omar Leonel</h3>
+          <h5>Fronted Developer</h5>
+        </div>
+        <div class="aboutme-box">
+          <details>
+            <summary>Sobre este Proyecto</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eum
+              dolorum ab non porro doloremque aliquam neque sint ipsum
+              doloribus, fugiat ex tempore culpa repudiandae nam laboriosam eius
+              iure similique.
+            </p>
+          </details>
+          <marquee behavior="alternate" direction="up" width="80%"
+            ><marquee direction="right">☢️☢️☢️☢️☢️☢️ </marquee></marquee
+          >
+          <br />
+          <details>
+            <summary><mark>falta por Hacer esto en el MODAL </mark></summary>
+            <ul>
+              <li>Audio✅</li>
+              <li>fingerClose✅</li>
+              <li>randomPhrases</li>
+              <li>save modal Click localStorage✅</li>
+              <li></li>
+            </ul>
+          </details>
+          <!-- <mark>Audio/fix finger/random-Phrases</mark> -->
+          <!-- <marquee behavior="alternate" direction="left">audio</marquee> -->
+        </div>
+      </div>
+      <button class="closedModalAboutMe">
+        <i class="fa-regular fa-thumbs-up"></i>
+      </button>
+    </div>
     <main>
       <h1>Servicio de Proteccion Federal</h1>
       <figure id="konyImg">

@@ -1,0 +1,95 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "jhin",
+      "url": "https://www.youtube.com/watch?v=Y1K_GTRTH5E",
+      "skin": [
+        {
+          "name": "jhin_base",
+          "phrases": [
+            {
+              "audioId": "jhin_base_phrase1",
+              "text": "mi genio florece en la masacre como un lirio al amanecer"
+            },
+            {
+              "audioId": "jhin_base_phrase2",
+              "text": "juro que cada actuacion sera la ultima ,pero miento cada vez"
+            },
+            {
+              "audioId": "jhin_base_phrase3",
+              "text": "tu vida no tenia valor antes de conocerme"
+            },
+            {
+              "audioId": "jhin_base_phrase4",
+              "text": "yo tocare tu corazon"
+            },
+            {
+              "audioId": "jhin_base_phrase5",
+              "text": "la tormenta esta en sus corazones, yo los calmo"
+            },
+            {
+              "audioId": "jhin_base_phrase6",
+              "text": "algun dia mi genialidad sera comprendida"
+            }
+          ]
+        },
+        {
+          "name": "jhin_snake",
+          "phrases": [
+            {
+              "audioId": "jhin_snake_phrase1",
+              "text": "vivo en el corazon de cada historia, nunguna puede escapar de mi"
+            },
+            {
+              "audioId": "jhin_snake_phrase2",
+              "text": "conocer tu papel es un don poco comun liberarte de tu papel es una revelacion"
+            },
+            {
+              "audioId": "jhin_snake_phrase3",
+              "text": "con el tiempo llegaran a agradecermelo"
+            },
+            {
+              "audioId": "jhin_snake_phrase4",
+              "text": "Maravilloso"
+            },
+            {
+              "audioId": "jhin_snake_phrase5",
+              "text": "con el tiempo llegaran a agradecermelo"
+            },
+            {
+              "audioId": "jhin_snake_phrase6",
+              "text": "risas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "kindred",
+      "skin": [
+        {
+          "name": "jhin_base",
+          "phrases": [
+            { "audioId": "jhin_base_phrase1", "text": "primera frase" },
+            { "audioId": "jhin_base_phrase2", "text": "segunda frase" }
+          ]
+        },
+        {
+          "name": "jhin_cosmico",
+          "phrases": [
+            {
+              "audioId": "jhin_cosmico_phrase1",
+              "text": "primera frase cosmico"
+            },
+            {
+              "audioId": "jhin_cosmico_phrase2",
+              "text": "segunda frase cosmico"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
