@@ -70,22 +70,28 @@
       "name": "kindred",
       "skin": [
         {
-          "name": "jhin_base",
+          "name": "kindred_base",
           "phrases": [
-            { "audioId": "jhin_base_phrase1", "text": "primera frase" },
-            { "audioId": "jhin_base_phrase2", "text": "segunda frase" }
+            {
+              "audioId": "kindred_base_phrase1",
+              "text": "el mañana es una esperanza jamas una promesa"
+            },
+            {
+              "audioId": "kindred_base_phrase2",
+              "text": "lucha o huye no importa"
+            }
           ]
         },
         {
-          "name": "jhin_cosmico",
+          "name": "kindred_cosmico",
           "phrases": [
             {
-              "audioId": "jhin_cosmico_phrase1",
-              "text": "primera frase cosmico"
+              "audioId": "kindred_cosmico_phrase1",
+              "text": "abrazar la vida significa aceptar la muerte"
             },
             {
-              "audioId": "jhin_cosmico_phrase2",
-              "text": "segunda frase cosmico"
+              "audioId": "kindred_cosmico_phrase2",
+              "text": "Separados, pero nunca divididos"
             }
           ]
         }

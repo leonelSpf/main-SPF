@@ -157,7 +157,9 @@ main {
 }
 .hidden {
   display: none;
+  visibility: hidden;
   opacity: 0;
+  /* z-index: -1; */
 }
 .modal-container {
   background-color: var(--Color-BlueDark);
@@ -169,7 +171,7 @@ main {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 6;
 }
 .modal-boxPhrases {
   width: 100%;
@@ -210,6 +212,20 @@ main {
   /* width: 100%; */
   grid-area: 1/1/2/2;
   align-self: end;
+}
+@keyframes aboutmeImg {
+  0% {
+    filter: drop-shadow(0 0 2px red) drop-shadow(0 0 12px red);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px red) drop-shadow(0 0 22px red);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px red) drop-shadow(0 0 12px red);
+  }
+}
+.modal-aboutMe .aboutme-box img {
+  animation: aboutmeImg 1.5s linear infinite;
 }
 .modal-aboutMe .aboutme-box:nth-of-type(2) {
   width: 100%;

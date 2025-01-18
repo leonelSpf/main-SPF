@@ -1,34 +1,44 @@
 export default function phrasesRandom() {
-  console.log("frases random");
+  // console.log("frases random");
   const url = "./phrasesRandomSPF.json";
   fetch(url)
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
     .then((data) => {
       let { name, skin } = data.characters[0];
-      console.log(data);
-      // console.log(name, skin[0].phrases);
-      // const characterAudio = skin;
-      for (const el of skin) {
-        const cloneObj = { ...el.phrases };
-        // const randomFrases = Math.random(cloneObj * 100);
-        // randomfrss = Math.trunc(Math.random() * 1);
-        // console.log(randomfrss);
 
-        // console.log(cloneObj[randomfrss]);
+      function getRandomPhrase(result) {
+        const characters = result.characters;
+        const randomCharacterIndex = Math.floor(
+          Math.random() * characters.length
+        );
+        const randomCharacter = characters[randomCharacterIndex];
 
-        // console.log("FRASES RANDOM" + randomFrases);
+        const skins = randomCharacter.skin;
+        const randomSkinIndex = Math.floor(Math.random() * skins.length);
+        const randomSkin = skins[randomSkinIndex];
 
-        console.log(cloneObj);
+        const phrases = randomSkin.phrases;
+        const randomPhraseIndex = Math.floor(Math.random() * phrases.length);
+        const randomPhrase = phrases[randomPhraseIndex];
 
-        for (const prop in cloneObj) {
-          const eleme = cloneObj[prop];
-          //  YA FUNCIONA ✅✅✅
-          // console.log(eleme.audioId);
-          // console.log(eleme.text);
-          // console.log(eleme);
-        }
-        // console.log(cloneObj[1]);
+        return {
+          characterName: randomCharacter.name,
+          skinName: randomSkin.name,
+          phrase: randomPhrase.text,
+          audioId: randomPhrase.audioId,
+        };
       }
+      const randomPhraseData = getRandomPhrase(data);
+      console.log(
+        `Personaje: ${randomPhraseData.characterName}, Skin: ${randomPhraseData.skinName}, Frase: ${randomPhraseData.phrase}, Audio ID: ${randomPhraseData.audioId}`
+      );
+      const $phraseRandom = document.getElementById("phraseRandom");
+      $phraseRandom.innerHTML = `~ "${randomPhraseData.phrase}"`;
+      const $idAudio = document.getElementById("phraseAudio");
+      $idAudio.setAttribute(
+        "src",
+        `./assets/Audio/${randomPhraseData.audioId}.mp3`
+      );
     })
     .catch((err) => {
       let errores =
