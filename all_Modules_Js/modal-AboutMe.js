@@ -16,12 +16,10 @@ export default function modalAboutMe(modalContainer) {
     $btnModalContainer.classList.remove("hidden");
   };
   d.addEventListener("click", (e) => {
-    console.log(e.target);
-
     if (e.target === $closedModalAboutMe || e.target === $btnModalCloses) {
       hiddenModal();
       $pruebaAudio.play();
-      $pruebaAudio.volume = 0.1;
+      $pruebaAudio.volume = 1;
     } else if (e.target === $btnModalCloses) {
       showModal();
     }

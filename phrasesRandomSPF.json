@@ -9,28 +9,72 @@
           "name": "jhin_base",
           "phrases": [
             {
-              "audioId": "jhin_base_phrase1",
-              "text": "mi genio florece en la masacre como un lirio al amanecer"
+              "audioId": "jhin_base_phrase01",
+              "text": "tu vida no tenia valor antes de conocerme?"
             },
             {
-              "audioId": "jhin_base_phrase2",
-              "text": "juro que cada actuacion sera la ultima ,pero miento cada vez"
+              "audioId": "jhin_base_phrase02",
+              "text": "lloraran cuando te encuentren"
             },
             {
-              "audioId": "jhin_base_phrase3",
-              "text": "tu vida no tenia valor antes de conocerme"
+              "audioId": "jhin_base_phrase03",
+              "text": "yo tocare tu corazón"
             },
             {
-              "audioId": "jhin_base_phrase4",
-              "text": "yo tocare tu corazon"
+              "audioId": "jhin_base_phrase04",
+              "text": "la tormenta esta en sus corazones yo los calmo"
             },
             {
-              "audioId": "jhin_base_phrase5",
-              "text": "la tormenta esta en sus corazones, yo los calmo"
+              "audioId": "jhin_base_phrase05",
+              "text": "algún día mi genialidad sera comprendida"
             },
             {
-              "audioId": "jhin_base_phrase6",
-              "text": "algun dia mi genialidad sera comprendida"
+              "audioId": "jhin_base_phrase06",
+              "text": "juro que cada actuación sera la ultima , pero siempre miento"
+            },
+            {
+              "audioId": "jhin_base_phrase07",
+              "text": "mis críticos suelen vivir poco"
+            },
+            {
+              "audioId": "jhin_base_phrase08",
+              "text": "les brindo catarsis a mis clientes y a mis victimas"
+            },
+            {
+              "audioId": "jhin_base_phrase09",
+              "text": "el momento anterior  al disparo es doloroso"
+            },
+            {
+              "audioId": "jhin_base_phrase10",
+              "text": "solo me siento vivo cuando el arma dispara"
+            },
+            {
+              "audioId": "jhin_base_phrase11",
+              "text": "la felicidad es un arma tibia"
+            },
+            {
+              "audioId": "jhin_base_phrase12",
+              "text": "broto en la masacre como  una flor al amanecer"
+            },
+            {
+              "audioId": "jhin_base_phrase13",
+              "text": "el arte surgira de tu temor"
+            },
+            {
+              "audioId": "jhin_base_phrase14",
+              "text": "la vida no tiene sentido, pero tu muerte la tendrá"
+            },
+            {
+              "audioId": "jhin_base_phrase15",
+              "text": "despertaste algo en lo mas profundo de mi ser"
+            },
+            {
+              "audioId": "jhin_base_phrase16",
+              "text": "el rosto de tu asesino es idéntico al mío"
+            },
+            {
+              "audioId": "jhin_base_phrase17",
+              "text": "sonríe todos están mirando"
             }
           ]
         },
@@ -38,20 +82,24 @@
           "name": "jhin_snake",
           "phrases": [
             {
-              "audioId": "jhin_snake_phrase1",
+              "audioId": "jhin_snake_phrase00",
               "text": "vivo en el corazon de cada historia, nunguna puede escapar de mi"
             },
             {
+              "audioId": "jhin_snake_phrase1",
+              "text": "somos un elenco de cuantos, triste destino uno de ustedes no llegara al Final"
+            },
+            {
               "audioId": "jhin_snake_phrase2",
-              "text": "conocer tu papel es un don poco comun liberarte de tu papel es una revelacion"
+              "text": "presencia ahora el desarrollo de mi historia"
             },
             {
               "audioId": "jhin_snake_phrase3",
-              "text": "con el tiempo llegaran a agradecermelo"
+              "text": "supongo que hasta la chusma , merece cierta delicadesa"
             },
             {
               "audioId": "jhin_snake_phrase4",
-              "text": "Maravilloso"
+              "text": "conocer tu papel es un don poco comun, liberarte de tu papel es una revelacion"
             },
             {
               "audioId": "jhin_snake_phrase5",
@@ -59,39 +107,23 @@
             },
             {
               "audioId": "jhin_snake_phrase6",
-              "text": "risas"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "kindred",
-      "skin": [
-        {
-          "name": "kindred_base",
-          "phrases": [
-            {
-              "audioId": "kindred_base_phrase1",
-              "text": "el mañana es una esperanza jamas una promesa"
+              "text": "Maravilloso"
             },
             {
-              "audioId": "kindred_base_phrase2",
-              "text": "lucha o huye no importa"
-            }
-          ]
-        },
-        {
-          "name": "kindred_cosmico",
-          "phrases": [
-            {
-              "audioId": "kindred_cosmico_phrase1",
-              "text": "abrazar la vida significa aceptar la muerte"
+              "audioId": "jhin_snake_phrase7",
+              "text": "tu eres el entretenimiento"
             },
             {
-              "audioId": "kindred_cosmico_phrase2",
-              "text": "Separados, pero nunca divididos"
+              "audioId": "jhin_snake_phrase8",
+              "text": "no huyas del deseo"
+            },
+            {
+              "audioId": "jhin_snake_phrase9",
+              "text": "JAJAJAJAAAA"
+            },
+            {
+              "audioId": "jhin_snake_phrase10",
+              "text": "jajaja"
             }
           ]
         }

@@ -1,7 +1,7 @@
 export default function asideAllSections() {
   const d = document,
     $btnBurguerMenus = d.querySelector(".btn-burguerMenu"),
-    $menuAside = d.querySelector(".allSections");
+    $menuAside = d.querySelector(".aside-allsections");
   const $bntExitMenuBuerguer = d.querySelector(".btn-exitAside");
 
   d.addEventListener("click", (e) => {

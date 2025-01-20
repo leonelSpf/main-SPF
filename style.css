@@ -188,10 +188,15 @@ main {
   margin-top: 4rem;
   /* color: white; */
 }
-.modal-boxPhrases h3 {
-  color: var(--Color-BlueLight);
-  filter: drop-shadow(0px 0px 2px var(--Color-BlueLight));
+.modal-boxPhrases #phraseRandom {
+  color: var(--Color-WhiteGhost);
+  filter: drop-shadow(0px 0px 2px var(--Color-WhiteGhost));
   padding: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
   text-align: center;
 }
 .modal-aboutMe {
@@ -258,120 +263,95 @@ main {
   justify-content: center;
   align-items: center;
 }
-.allSections {
+/* ☢️☢️===MENU ASIDE===☢️☢️☢️☢️
+☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️☢️ */
+
+.aside-allsections {
   display: none;
 }
-
 .is-active-asideMenu {
-  background-color: var(--Color-BlueGray);
-  background: linear-gradient(to bottom, #345995, #283e64);
-  width: 90%;
-  height: 90dvh;
-  top: 0;
-  right: 0;
-  position: fixed;
+  background-color: var(--Color-BlueDark);
+
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  z-index: 999;
-}
-.is-active-asideMenu .sectionBtnOptionsMenu {
-  /* background-color: var(--Color-BlueGray); */
-  /* background-color: gold; */
-  /* background: linear-gradient(to top, #345995, #283e64); */
-  width: 100%;
-  padding: 1rem;
-  position: absolute;
-  bottom: -2.5rem;
-  display: flex;
-  /* z-index: 1; */
-  /* ☢️☢️☢️☢️
-    modificar el display none
-   */
-  /* display: none; */
-
-  align-items: center;
-  justify-content: space-between;
-  /* z-index: -10; */
-}
-
-.sectionBtnOptionsMenu button {
-  width: 30%;
-  background-color: var(--Color-BlackNight);
-  color: var(--Color-gray);
-  display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--Color-WhiteGhost); */
-  padding: 0.5rem 1rem;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  border-right: 2px solid;
-  position: relative;
-  transition: all ease;
+  position: fixed;
+  top: 5rem;
+  z-index: 995;
+  transition: all 300ms ease;
 }
-.sectionBtnOptionsMenu button:nth-of-type(2) {
-  /* ☢️☢️☢️☢️☢️
-    PARA DESACTIVAR ANIMATION ASIDEmENU
-  */
-  background-color: var(--Color-BlueLight);
-  width: 100%;
-  animation: btnAsideMenuAnimated 1s linear infinite;
-}
-@keyframes btnAsideMenuAnimated {
-  0% {
-    transform: translateY(0.5rem);
-  }
-
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0.5rem);
-  }
-}
-.btn-exitAside {
-  padding: 1rem;
-  display: inline-block;
-  border-radius: 50%;
-  margin: auto;
-}
-.is-active-asideMenu ul,
-.is-active-asideMenu li,
-.is-active-asideMenu a {
-  /* background-color: var(--Color-BlueLight); */
-  height: 100%;
+.asideContainer-boxsection {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  /* margin-bottom: 1rem; */
-  /* justify-items: space-around;
-  align-self: center; */
+  justify-content: space-around;
 }
-/* .is-active-asideMenu  */
-.is-active-asideMenu a {
-  border-bottom: 1px solid black;
-  text-decoration: none;
-  font-weight: 300;
-  /* background: linear-gradient(to bottom, #345995, #56789a); */
+.asideContainer-boxsection .aside-boxSection {
+}
 
-  /* margin-bottom: 1rem; */
-  /* background-color: #fff; */
-  /* padding: 1rem; */
-  /* color: #00a6fb; */
+.asideContainer-boxsection .aside-boxSection li {
+  display: inline-flex;
+  border: 1px solid;
+  width: 100%;
+  list-style: none;
 }
-.is-active-asideMenu ul:nth-of-type(odd) {
-  display: none;
+.aside-boxSection > li > a {
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2vh;
+  font-weight: 400;
+  font-family: sans-serif;
 }
-.article-chainCommand .container-allCommands {
-  height: 30vh;
+.asideMenubtns {
+  /* background-color: red; */
+  margin-top: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1vh;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+.asideMenubtns h4 {
+  grid-area: 1/1/1/5;
+  background-color: var(--Color-BlackNight);
+  color: var(--Color-WhiteGhost);
+  text-align: center;
+  align-self: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.asideMenubtns button {
+  background-color: var(--Color-WhiteGhost);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5vh;
+}
+.asideMenubtns button:nth-of-type(1) {
+  background-color: var(--Color-BlueGray);
+}
+.asideMenubtns button:nth-of-type(2) {
+  background-color: var(--Color-BlueLight);
+}
+.asideMenubtns button:nth-of-type(3) {
+  background-color: var(--Color-BlueLight);
+}
+.btn-exitAside {
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: 1rem; */
+  /* display: flex; */
 }
 .is-activeArticle-chainCommand .container-allCommands {
   height: 15vh;

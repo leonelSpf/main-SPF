@@ -36,48 +36,48 @@
       </div>
     </header>
 
-    <aside class="allSections">
-      <ul class="is-active-sectionBasic">
-        <li><a href="#CadenaMando">Chain of Command</a></li>
-        <li><a href="#CadenaMando">Hierarchical Scale</a></li>
-        <li><a href="#CadenaMando">Presentation</a></li>
-        <li><a href="#CadenaMando">Mision</a></li>
-        <li><a href="#CadenaMando">Vision</a></li>
-        <li><a href="#CadenaMando">Actuaction Protocol</a></li>
-        <li><a href="#CadenaMando">Laws</a></li>
-        <li><a href="#CadenaMando">Fire Circle</a></li>
-        <li><a href="#CadenaMando">Uso de la Fuerza</a></li>
-        <li><a href="#CadenaMando">Circulo de Fuego</a></li>
-      </ul>
-      <ul class="is-active-sectionMedium">
-        <li><a href="#CadenaMando">Regulation SPF</a></li>
-        <li><a href="#CadenaMando">Homologated Police Report</a></li>
-        <li><a href="#CadenaMando">CPEUM</a></li>
-        <li><a href="#CadenaMando">Personal Protection</a></li>
-        <li><a href="#CadenaMando">Federal Precedents Code</a></li>
-        <li>
-          <a href="#CadenaMando">national Protocol on the Use of Force</a>
-        </li>
-      </ul>
-      <ul class="is-active-sectionAbout">
-        <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
-        <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
-        <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
-      </ul>
-      <section class="sectionBtnOptionsMenu">
-        <button>Basic</button>
+    <aside class="aside-allsections">
+      <div class="asideContainer-boxsection">
+        <ul class="aside-boxSection">
+          <li><a href="#CadenaMando">Cadena de mando</a></li>
+          <li><a href="#CadenaMando">Escala Jerarquica</a></li>
+          <li><a href="#CadenaMando">Presentation</a></li>
+          <li><a href="#CadenaMando">Mision</a></li>
+          <li><a href="#CadenaMando">Vision</a></li>
+          <li><a href="#CadenaMando">Protocolo de Actuación</a></li>
+          <li><a href="#CadenaMando">Leyes</a></li>
+          <li><a href="#CadenaMando">Circulo de Fuego</a></li>
+          <li><a href="#CadenaMando">Uso de la Fuerza</a></li>
+          <li><a href="#CadenaMando">Circulo de Fuego</a></li>
+        </ul>
+        <ul class="aside-boxSection hidden">
+          <li><a href="#CadenaMando">Regulation SPF</a></li>
+          <li><a href="#CadenaMando">Homologated Police Report</a></li>
+          <li><a href="#CadenaMando">CPEUM</a></li>
+          <li><a href="#CadenaMando">Personal Protection</a></li>
+          <li><a href="#CadenaMando">Federal Precedents Code</a></li>
+          <li>
+            <a href="#CadenaMando">national Protocol on the Use of Force</a>
+          </li>
+        </ul>
+        <ul class="aside-boxSection hidden">
+          <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
+          <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
+          <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
+        </ul>
+      </div>
+      <section class="asideMenubtns">
+        <h4>mas opciones <i class="fa-solid fa-caret-down"></i></h4>
+        <button disabled>Basic</button>
         <button>Medium</button>
         <button>About</button>
+        <button class="btn-exitAside" type="button">Exit</button>
       </section>
-
-      <button class="btn-exitAside" type="button">Exit</button>
     </aside>
     <div class="modal-container">
       <div class="modal-boxPhrases">
         <!-- <h3>[phrases Random/Audio]</h3> -->
-        <h3 id="phraseRandom">
-          ~"Vivo en el Corazon de Cada Historia Ninguna Puede Escapar de Mi"
-        </h3>
+        <h3 id="phraseRandom"></h3>
         <!-- <button><i class="fa-solid fa-circle-play"></i></button> -->
         <audio id="phraseAudio" src=""></audio>
       </div>
@@ -128,114 +128,119 @@
         <img src="./assets/img/konyCartoonSmall.jpg" alt="konyCartoonSmall" />
         <figcaption>LOADING</figcaption>
       </figure>
-
-      <section class="sections">
-        <!-- <div class="container-allCommands"></div> -->
-        <!-- <article class="article-chainCommand"></article> -->
-        <article class="articles article-chainCommand" id="CadenaMando">
-          <h2>Cadena de Mandos <i class="fa-solid fa-caret-down"></i></h2>
-          <!-- <div class="btnToggle-tbl">
-            <i class="fa-solid fa-table-list"></i>
-          </div> -->
-          <div class="btnToggle-tbl">
-            <i class="fa-solid fa-table"></i>
-          </div>
-          <template id="tmp-boxCommands">
-            <div class="container-allCommands">
-              <div class="container-box">
-                <img src="assets/img/yoloImg.png" alt="PhotoImages" />
-              </div>
-              <div class="container-box">
-                <ul class="box-userChains">
-                  <li class="indicative"></li>
-                  <li><span class="grade"></span></li>
-                  <li>
-                    <span class="schollHight"></span><span class="name"></span>
-                    <span class="lastName"></span>
-                    <span class="secondLastName"> </span>
-                  </li>
-                  <li class="comision"></li>
-                </ul>
-              </div>
-            </div>
-          </template>
-        </article>
-      </section>
       <div class="btns">
         <div class="btn-scrollUp hidden">
           <i class="fa-solid fa-arrow-up"></i>
         </div>
         <div class="btn-burguerMenu"><i class="fa-solid fa-bars"></i></div>
       </div>
-      <section class="sections" id="scaleGrades">
-        <h2>Escala Jerárquica<i class="fa-solid fa-caret-down"></i></h2>
-        <p>en el servicio de Proteccion Federal</p>
-        <aticle class="grades" id="basicScale">
-          <h3>Escala Basica</h3>
-        </aticle>
-        <aticle class="grades" id="oficialScale">
-          <h3>Escala Oficial</h3>
-        </aticle>
-        <aticle class="grades" id="inspectorScale">
-          <h3>Escala Inspector</h3>
-        </aticle>
-        <aticle class="grades" id="ComisarioScale">
-          <h3>Escala Comisario</h3>
-        </aticle>
-        <p>
-          <b
-            >Recuerda siempre mostrar respeto a los mandos y a tus superiores
-            jerárquicos</b
-          >
-        </p>
-      </section>
-      <section class="sections">
-        <h2>Mision<i class="fa-solid fa-caret-down"></i></h2>
-        <article class="articles" id="misionInstitucional">
-          <h3>Misión Institucional</h3>
-        </article>
-      </section>
-      <section class="sections">
-        <h2>vision<i class="fa-solid fa-caret-down"></i></h2>
-        <article class="articles" id="visionInstitucional">
-          <h3>Visión Institucional</h3>
-        </article>
-      </section>
-      <section class="sections">
-        <h2>Exhorto y lema<i class="fa-solid fa-caret-down"></i></h2>
-        <article class="articles" id="exhortoInstitucional">
-          <h3>Exhorto</h3>
-        </article>
-        <article class="articles" id="lemaInstitucional">
-          <h3>Lema</h3>
-        </article>
-      </section>
-      <section class="sections">
-        <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
+      <section class="sectionContainer-basic">
+        <section class="sections">
+          <!-- <div class="container-allCommands"></div> -->
+          <!-- <article class="article-chainCommand"></article> -->
+          <article class="articles article-chainCommand" id="CadenaMando">
+            <h2>Cadena de Mandos <i class="fa-solid fa-caret-down"></i></h2>
+            <!-- <div class="btnToggle-tbl">
+            <i class="fa-solid fa-table-list"></i>
+          </div> -->
+            <div class="btnToggle-tbl">
+              <i class="fa-solid fa-table"></i>
+            </div>
+            <template id="tmp-boxCommands">
+              <div class="container-allCommands">
+                <div class="container-box">
+                  <img src="assets/img/yoloImg.png" alt="PhotoImages" />
+                </div>
+                <div class="container-box">
+                  <ul class="box-userChains">
+                    <li class="indicative"></li>
+                    <li><span class="grade"></span></li>
+                    <li>
+                      <span class="schollHight"></span
+                      ><span class="name"></span>
+                      <span class="lastName"></span>
+                      <span class="secondLastName"> </span>
+                    </li>
+                    <li class="comision"></li>
+                  </ul>
+                </div>
+              </div>
+            </template>
+          </article>
+        </section>
 
-        <article class="articles" id="pruebas">
-          <h2>Testing</h2>
-        </article>
-      </section>
-      <section class="sections">
-        <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
+        <section class="sections" id="scaleGrades">
+          <h2>Escala Jerárquica<i class="fa-solid fa-caret-down"></i></h2>
+          <p>en el servicio de Proteccion Federal</p>
+          <aticle class="grades" id="basicScale">
+            <h3>Escala Basica</h3>
+          </aticle>
+          <aticle class="grades" id="oficialScale">
+            <h3>Escala Oficial</h3>
+          </aticle>
+          <aticle class="grades" id="inspectorScale">
+            <h3>Escala Inspector</h3>
+          </aticle>
+          <aticle class="grades" id="ComisarioScale">
+            <h3>Escala Comisario</h3>
+          </aticle>
+          <p>
+            <b
+              >Recuerda siempre mostrar respeto a los mandos y a tus superiores
+              jerárquicos</b
+            >
+          </p>
+        </section>
+        <section class="sections">
+          <h2>Mision<i class="fa-solid fa-caret-down"></i></h2>
+          <article class="articles" id="misionInstitucional">
+            <h3>Misión Institucional</h3>
+          </article>
+        </section>
+        <section class="sections">
+          <h2>vision<i class="fa-solid fa-caret-down"></i></h2>
+          <article class="articles" id="visionInstitucional">
+            <h3>Visión Institucional</h3>
+          </article>
+        </section>
+        <section class="sections">
+          <h2>Exhorto y lema<i class="fa-solid fa-caret-down"></i></h2>
+          <article class="articles" id="exhortoInstitucional">
+            <h3>Exhorto</h3>
+          </article>
+          <article class="articles" id="lemaInstitucional">
+            <h3>Lema</h3>
+          </article>
+        </section>
+        <section class="sections">
+          <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
 
-        <article class="articles" id="pruebas">
-          <h2>Testing</h2>
-        </article>
-      </section>
-      <section class="sections">
-        <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
+          <article class="articles" id="pruebas">
+            <h2>Testing</h2>
+          </article>
+        </section>
+        <section class="sections">
+          <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
 
-        <article class="articles" id="pruebas">
-          <h2>Testing</h2>
-        </article>
+          <article class="articles" id="pruebas">
+            <h2>Testing</h2>
+          </article>
+        </section>
+        <section class="sections">
+          <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
+
+          <article class="articles" id="pruebas">
+            <h2>Testing</h2>
+          </article>
+        </section>
+        <section class="sections">
+          <article class="articles" id="pruebas">
+            <h2>Testing</h2>
+          </article>
+        </section>
       </section>
-      <section class="sections">
-        <article class="articles" id="pruebas">
-          <h2>Testing</h2>
-        </article>
-      </section>
+      <section class="sectionContainer-medium"></section>
+      <section class="sectionContainer-about"></section>
       <footer>
         <p>by</p>
         <h4>OmarLeonel</h4>
