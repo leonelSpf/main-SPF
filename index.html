@@ -39,38 +39,60 @@
     <aside class="aside-allsections">
       <div class="asideContainer-boxsection">
         <ul class="aside-boxSection">
+          <h3 style="color: white">
+            <i class="fa-solid fa-graduation-cap"></i>CONOCIMIENTOS BASICO
+          </h3>
           <li><a href="#CadenaMando">Cadena de mando</a></li>
-          <li><a href="#CadenaMando">Escala Jerarquica</a></li>
-          <li><a href="#CadenaMando">Presentation</a></li>
-          <li><a href="#CadenaMando">Mision</a></li>
-          <li><a href="#CadenaMando">Vision</a></li>
-          <li><a href="#CadenaMando">Protocolo de Actuación</a></li>
-          <li><a href="#CadenaMando">Leyes</a></li>
-          <li><a href="#CadenaMando">Circulo de Fuego</a></li>
-          <li><a href="#CadenaMando">Uso de la Fuerza</a></li>
-          <li><a href="#CadenaMando">Circulo de Fuego</a></li>
+          <li><a href="#scaleGrades">Escala Jerarquica</a></li>
+          <li><a href="#misionInstitucional">Mision</a></li>
+          <li><a href="#visionInstitucional">Vision</a></li>
+          <li><a href="#mePresento">Presentation</a></li>
+          <li><a href="#armamento">Piramide del Uso de la Fuerza</a></li>
+          <li><a href="#armamento">Armamento</a></li>
+          <li><a href="#">Circulo de Fuego</a></li>
+          <li><a href="#">Uso de la Fuerza</a></li>
+          <!-- <li><a href="#CadenaMando">Circulo de Fuego</a></li> -->
         </ul>
         <ul class="aside-boxSection hidden">
-          <li><a href="#CadenaMando">Regulation SPF</a></li>
-          <li><a href="#CadenaMando">Homologated Police Report</a></li>
+          <h3 style="color: white">
+            <i class="fa-solid fa-scale-balanced"></i>CONOCIMIENTOS
+            FUNDAMENTALES
+          </h3>
+          <p><mark>☢️☢️☢️PROXIMAMENTE☢️☢️☢️☢️</mark></p>
+
+          <li><a href="#Protocolo_de_Actuacion">Protocolo de Actuación</a></li>
+          <li><a href="#CadenaMando">Leyes</a></li>
+
+          <li><a href="#CadenaMando">Informe Policial Homologado</a></li>
           <li><a href="#CadenaMando">CPEUM</a></li>
-          <li><a href="#CadenaMando">Personal Protection</a></li>
-          <li><a href="#CadenaMando">Federal Precedents Code</a></li>
+          <li>
+            <a href="#CadenaMando">Código Nacional de Procedimientos Penales</a>
+          </li>
+          <li>
+            <a href="cadenMando"> Protocolo Nacional sobre Uso de la Fuerza </a>
+          </li>
           <li>
             <a href="#CadenaMando">national Protocol on the Use of Force</a>
           </li>
+          <li><a href="#CadenaMando">Proteccion a Personas</a></li>
         </ul>
         <ul class="aside-boxSection hidden">
+          <h3 style="color: white">
+            <i class="fa-solid fa-users-rectangle"></i>INTRODUCCION A LA
+            INSTITUCION
+          </h3>
+          <p><mark>☢️☢️☢️PROXIMAMENTE☢️☢️☢️☢️</mark></p>
+          <li><a href="#CadenaMando">Reglamento de SPF</a></li>
           <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
           <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
           <li><a href="#CadenaMando">Calidad en el Servicio</a></li>
         </ul>
       </div>
       <section class="asideMenubtns">
-        <h4>mas opciones <i class="fa-solid fa-caret-down"></i></h4>
-        <button disabled>Basic</button>
-        <button>Medium</button>
-        <button>About</button>
+        <!-- <h4>mas opciones <i class="fa-solid fa-caret-down"></i></h4> -->
+        <button id="btnAsideSections-Basic" disabled>Basico</button>
+        <button id="btnAsideSections-Medium">Fundamentales</button>
+        <button id="btnAsideSections-Intruduction">Introduccion</button>
         <button class="btn-exitAside" type="button">Exit</button>
       </section>
     </aside>
@@ -100,22 +122,6 @@
               <strong>autoaprendizaje</strong> dentro de la institución."
             </p>
           </details>
-          <!-- <marquee behavior="alternate" direction="up" width="80%"
-            ><marquee direction="right">☢️☢️☢️☢️☢️☢️ </marquee></marquee
-          > -->
-          <br />
-          <!-- <details>
-            <summary><mark>falta por Hacer esto en el MODAL </mark></summary>
-            <ul>
-              <li>Audio✅</li>
-              <li>fingerClose✅</li>
-              <li>randomPhrases ✅</li>
-              <li>save modal Click localStorage✅</li>
-              <li></li>
-            </ul>
-          </details> -->
-          <!-- <mark>Audio/fix finger/random-Phrases</mark> -->
-          <!-- <marquee behavior="alternate" direction="left">audio</marquee> -->
         </div>
       </div>
       <button class="closedModalAboutMe">
@@ -134,12 +140,13 @@
         </div>
         <div class="btn-burguerMenu"><i class="fa-solid fa-bars"></i></div>
       </div>
-      <section class="sectionContainer-basic">
+      <!-- 🔺🔺🔺  BASIC SECTION 🔺🔺🔺 -->
+      <section class="sectionContainer-basic" data-section="section-basic">
         <section class="sections">
           <!-- <div class="container-allCommands"></div> -->
           <!-- <article class="article-chainCommand"></article> -->
           <article class="articles article-chainCommand" id="CadenaMando">
-            <h2>Cadena de Mandos <i class="fa-solid fa-caret-down"></i></h2>
+            <h2>Cadena de Mando <i class="fa-solid fa-caret-down"></i></h2>
             <!-- <div class="btnToggle-tbl">
             <i class="fa-solid fa-table-list"></i>
           </div> -->
@@ -171,7 +178,17 @@
 
         <section class="sections" id="scaleGrades">
           <h2>Escala Jerárquica<i class="fa-solid fa-caret-down"></i></h2>
-          <p>en el servicio de Proteccion Federal</p>
+          <!-- <p>en el servicio de Proteccion Federal</p> -->
+          <p>
+            <i class="fa-regular fa-lightbulb"></i>
+            <samp
+              ><mark class="proTips"
+                >*** Recuerda Siempre mostrar Respeto a los mandos y tus
+                Superiores Jerarquicos</mark
+              ></samp
+            >
+          </p>
+
           <aticle class="grades" id="basicScale">
             <h3>Escala Basica</h3>
           </aticle>
@@ -184,12 +201,6 @@
           <aticle class="grades" id="ComisarioScale">
             <h3>Escala Comisario</h3>
           </aticle>
-          <p>
-            <b
-              >Recuerda siempre mostrar respeto a los mandos y a tus superiores
-              jerárquicos</b
-            >
-          </p>
         </section>
         <section class="sections">
           <h2>Mision<i class="fa-solid fa-caret-down"></i></h2>
@@ -213,8 +224,309 @@
           </article>
         </section>
         <section class="sections">
-          <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
+          <h2>Presentación<i class="fa-solid fa-caret-down"></i></h2>
+          <article class="articles" id="mePresento">
+            <p>
+              <i class="fa-regular fa-lightbulb"></i>
+              <samp
+                ><mark class="proTips"
+                  >*** Tienes que adoptar la posicio de en FIRMES y
+                  SALUDAR</mark
+                ></samp
+              >
+            </p>
+            <ol>
+              <li>Buenos dias/tardes/noches</li>
+              <li>Soy el <b>[grado] [nombre]</b> de proteccion federal</li>
+              <li>Perteneciente a la region <b> [región]</b></li>
+              <li>Asignado al servicio <b>[servicio]</b></li>
+              <li>En el inmueble <b>[inmueble]</b></li>
+              <li>En el punto de seguridad <b>[punto de seguridad]</b></li>
+              <li>
+                Con la misión de brindar la prestación de servicios de
+                protección , custodia ,vigilancia y seguridad de bienes e
+                inmuebles federales, y a persona físicas o morales ,
+                contribuyendo a que <b>[misión del inmueble]</b>
+              </li>
+              <li>Novedades del punto <b>[novedades]</b></li>
+              <li><b>[saludar]</b></li>
+              <li>Ordene usted</li>
+            </ol>
+          </article>
+        </section>
+        <section class="sections">
+          <article class="articles" id="armamento">
+            <!-- <h2>Testing</h2> -->
+            <h2>Armamento</h2>
+            <section id="armamento-MedidasSeguridad">
+              <h2><i class="fa-solid fa-turn-up"></i>Medidas de seguridad</h2>
+              <ol>
+                <li>
+                  Por seguridad y regla general, todas las armas de fuego se
+                  deben tratar como si estuvieran abastecidas y cargadas.
+                </li>
+                <li>No colocar el dedo sobre el disparador.</li>
+                <li>
+                  Buscar un área libre y/o segura, y tomar el arma en guardia
+                  alta o baja, donde no se causen daños o se minimicen, evitando
+                  las balas perdidas.
+                </li>
+                <li>
+                  Verificar que el arma tenga puesto el seguro (si no es así,
+                  colocarlo).
+                </li>
+                <li>Retirar el cargador.</li>
+                <li>
+                  Abrir y cerrar la recámara dos veces continuas, permitiendo
+                  que cierre libremente y, en caso de existir cartucho, este
+                  salga expulsado (el fusil Galil requiere quitar el seguro
+                  antes).
+                </li>
+                <li>
+                  Nuevamente abrir la recámara, con el fin de verificar
+                  visualmente y/o físicamente que no exista cartucho en el
+                  interior, cerrando la recámara permitiendo el libre
+                  desplazamiento del carro o corredera.
+                </li>
+                <li>Retirar el seguro.</li>
+                <li><mark class="proTips">***</mark>Accionar el disparador.</li>
+                <li>Colocar el seguro.</li>
+              </ol>
+              <p>“CON ESTAS MEDIDAS SE OBTIENE UN ARMA LIBRE Y SEGURA”</p>
+              <br />
+              <details>
+                <summary>
+                  ✨<mark class="proTips"> ***ANTIGUA MANERA ***</mark> ✨
+                </summary>
+                <ol>
+                  <li>Considerar las armas abastecidas y cargadas.</li>
+                  <li>No colocar el dedo sobre el disparador.</li>
+                  <li>Buscar un área libre y segura.</li>
+                  <li>Verificar que tenga el seguro puesto.</li>
+                  <li>Desinsertar el cargador.</li>
+                  <li>Cerrojear el arma dos veces.</li>
+                  <li>Verificar que no exista cartucho en la recámara.</li>
+                  <li>Retirar el seguro.</li>
+                  <li>
+                    <mark class="proTips">***</mark>Accionar el disparador.
+                  </li>
+                  <li>Colocar el seguro.</li>
+                </ol>
+              </details>
+              <div class="armamento-medidasSeguridad-box">
+                <details>
+                  <br />
+                  <summary>⚠️⚠️ Mas Detalles ⚠️⚠️</summary>
+                  <p>
+                    AL TERMINAR LAS MEDIDAS DE SEGURIDAD CON TU ARMAMENTO…
+                    <br />
+                    ◼SI MONTAS SERVICIO INSERTA TU CARGADOR Y COLOCA SEGURO
+                    <br />
+                    ◼ SI DESMONTAS SERVICIO ENTREGA TU ARMA CON LA RECAMARA
+                    ABIERTA Y EL CAÑON DIRIGIDO HACIA TU CUERPO
+                  </p>
+                  <br />
+                  <summary>PELIGRO</summary>
+                  <p>NUNCA SUBIR CARTUCHO A LA RECAMARA SI NO ES NECESARIO</p>
+                  <br />
 
+                  <small>
+                    ***Mediante oficio 3076/2022 de fecha 18 de julio de 2022,
+                    se instruye omitir accionar el disparador al momento de
+                    realizar las medidas de seguridad
+                  </small>
+                </details>
+              </div>
+            </section>
+            <section id="armamento-CirculoFuego">
+              <h2><i class="fa-solid fa-turn-up"></i>Circulo de Fuego</h2>
+            </section>
+            <section id="armamento-CaracteristicArma">
+              <h2>
+                <i class="fa-solid fa-turn-up"></i>caracteristicas de las armas
+              </h2>
+
+              <p>** nota nivel uso de la fuerza letal</p>
+              <ul>
+                <li><a href="#">pistola Pietro Beretta 92-FS-9mm</a></li>
+                <li><a href="#">pistola Ametralladora Mendoza HM-3-s</a></li>
+                <li><a href="#">fusil Galil IWI ACE-21</a></li>
+                <li><a href="#">carabina Bush Master XM-15</a></li>
+                <li><a href="#">pistola AZTK 9mm</a></li>
+              </ul>
+              <section>
+                <h2>beretta</h2>
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Beretta 92 FS"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    src="https://sketchfab.com/models/c2c04e82d74a41b08288dbd6027c43dc/embed"
+                  >
+                  </iframe>
+                  <p
+                    style="
+                      font-size: 13px;
+                      font-weight: normal;
+                      margin: 5px;
+                      color: #4a4a4a;
+                    "
+                  >
+                    <a
+                      href="https://sketchfab.com/3d-models/beretta-92-fs-c2c04e82d74a41b08288dbd6027c43dc?utm_medium=embed&utm_campaign=share-popup&utm_content=c2c04e82d74a41b08288dbd6027c43dc"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      Beretta 92 FS
+                    </a>
+                    by
+                    <a
+                      href="https://sketchfab.com/ZightMySuck?utm_medium=embed&utm_campaign=share-popup&utm_content=c2c04e82d74a41b08288dbd6027c43dc"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      ZightMySuck
+                    </a>
+                    on
+                    <a
+                      href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c2c04e82d74a41b08288dbd6027c43dc"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                      >Sketchfab</a
+                    >
+                  </p>
+                </div>
+              </section>
+              <section>
+                <h2>mendoza</h2>
+                <p>https://www.artstation.com/artwork/Al0PQX</p>
+              </section>
+              <section>
+                <h2>galil</h2>
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="Ace 21 CQB (Low Poly)"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    src="https://sketchfab.com/models/84ed1f729e81498bad1c9ef95d24288e/embed"
+                  >
+                  </iframe>
+                  <p
+                    style="
+                      font-size: 13px;
+                      font-weight: normal;
+                      margin: 5px;
+                      color: #4a4a4a;
+                    "
+                  >
+                    <a
+                      href="https://sketchfab.com/3d-models/ace-21-cqb-low-poly-84ed1f729e81498bad1c9ef95d24288e?utm_medium=embed&utm_campaign=share-popup&utm_content=84ed1f729e81498bad1c9ef95d24288e"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      Ace 21 CQB (Low Poly)
+                    </a>
+                    by
+                    <a
+                      href="https://sketchfab.com/Unit3D?utm_medium=embed&utm_campaign=share-popup&utm_content=84ed1f729e81498bad1c9ef95d24288e"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      Unit3D
+                    </a>
+                    on
+                    <a
+                      href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=84ed1f729e81498bad1c9ef95d24288e"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                      >Sketchfab</a
+                    >
+                  </p>
+                </div>
+              </section>
+              <section>
+                <h2>bush master</h2>
+                <div class="sketchfab-embed-wrapper">
+                  <iframe
+                    title="M4 Carbine"
+                    frameborder="0"
+                    allowfullscreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    xr-spatial-tracking
+                    execution-while-out-of-viewport
+                    execution-while-not-rendered
+                    web-share
+                    src="https://sketchfab.com/models/079049c48d1346bdaa492ec97a8980d6/embed"
+                  >
+                  </iframe>
+                  <p
+                    style="
+                      font-size: 13px;
+                      font-weight: normal;
+                      margin: 5px;
+                      color: #4a4a4a;
+                    "
+                  >
+                    <a
+                      href="https://sketchfab.com/3d-models/m4-carbine-079049c48d1346bdaa492ec97a8980d6?utm_medium=embed&utm_campaign=share-popup&utm_content=079049c48d1346bdaa492ec97a8980d6"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      M4 Carbine
+                    </a>
+                    by
+                    <a
+                      href="https://sketchfab.com/Luchador90?utm_medium=embed&utm_campaign=share-popup&utm_content=079049c48d1346bdaa492ec97a8980d6"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                    >
+                      Luchador
+                    </a>
+                    on
+                    <a
+                      href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=079049c48d1346bdaa492ec97a8980d6"
+                      target="_blank"
+                      rel="nofollow"
+                      style="font-weight: bold; color: #1caad9"
+                      >Sketchfab</a
+                    >
+                  </p>
+                </div>
+              </section>
+            </section>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h2>Piramide del uso de la fuerza</h2>
+          </article>
+        </section>
+
+        <section class="sections">
           <article class="articles" id="pruebas">
             <h2>Testing</h2>
           </article>
@@ -224,13 +536,17 @@
 
           <article class="articles" id="pruebas">
             <h2>Testing</h2>
-          </article>
-        </section>
-        <section class="sections">
-          <h2>More Sections Here<i class="fa-solid fa-caret-down"></i></h2>
-
-          <article class="articles" id="pruebas">
-            <h2>Testing</h2>
+            <div class="pruebaImagenes">
+              <div class="containerImageTest">
+                <img
+                  src="./assets/svg/frame_Police_Dark_Svg.svg"
+                  alt="frame_Police_Dark_Svg"
+                />
+                <div class="containerImageTest-inset">
+                  <img src="./assets/img/konyCartoonSmall.jpg" alt="yoloImg" />
+                </div>
+              </div>
+            </div>
           </article>
         </section>
         <section class="sections">
@@ -239,8 +555,71 @@
           </article>
         </section>
       </section>
-      <section class="sectionContainer-medium"></section>
-      <section class="sectionContainer-about"></section>
+      <!-- 🔺🔺🔺  MEDIUM SECTION 🔺🔺🔺 -->
+
+      <section
+        class="sectionContainer-medium hidden"
+        data-section="section-medium"
+      >
+        <h2>CONOCIMIENTOS FUNDAMENTALES</h2>
+        <p><mark>☢️☢️☢️PROXIMAMENTE☢️☢️☢️☢️</mark></p>
+        <article></article>
+        <article id="Protocolo_de_Actuacion">
+          <h2>Protocolos de Actuacion<i class="fa-solid fa-caret-down"></i></h2>
+          <h3><b>pruebas ☢️☢️</b></h3>
+          <p>
+            Se han elaborado protocolos de actuación claros y prácticos para que
+            el personal operativo gestione eficazmente las situaciones de riesgo
+            o emergencia durante su servicio. <br />
+            Estos protocolos incluyen ejemplos de coordinación, ejecución y
+            presentación de informes a la superioridad para afrontar cualquier
+            contingencia que altere el orden público, lo que permitirá ofrecer
+            servicios de protección y seguridad más eficientes y de mayor
+            calidad.
+          </p>
+          <p></p>
+
+          <h3>Protocolos de Operatividad</h3>
+          <ol>
+            <li>Protocolo de vandalismo</li>
+            <li>Protocolo en caso de agresión</li>
+            <li>Apoyo de otras dependencias</li>
+            <li>Cero alcohol</li>
+            <li>Daño al inmueble</li>
+            <li>Empleo responsable y seguro de las armas de fuego</li>
+            <li>Protocolo en caso de manifestación</li>
+            <li>Restablecimiento del orden público</li>
+            <li>Revisión de personas, objetos y/o equipos sospechosos</li>
+            <li>Revisión a vehículo</li>
+            <li>Robo</li>
+            <li>Rondines</li>
+            <li>Sabotaje</li>
+            <li>Sustracción indebida de información y/o documentos</li>
+            <li>Uso racional de la fuerza</li>
+          </ol>
+          <h3>Protocolos de Emergencia</h3>
+          <ol>
+            <li>Amenaza de bomba</li>
+            <li>Apoyo a los servicios de emergencia</li>
+            <li>Atentado</li>
+            <li>Huelga</li>
+            <li>Incendio</li>
+            <li>Motín</li>
+            <li>Secuestro</li>
+            <li>Sismo</li>
+            <li>Toma de rehenes</li>
+          </ol>
+        </article>
+      </section>
+      <!-- 🔺🔺🔺  INTRUDUCCION SECTION 🔺🔺🔺 -->
+
+      <section
+        class="sectionContainer-about hidden"
+        data-section="section-introduction"
+      >
+        <h2>INTRODUCCION A LA INSTITUCIÓN</h2>
+        <p><mark>☢️☢️☢️PROXIMAMENTE☢️☢️☢️☢️</mark></p>
+      </section>
       <footer>
         <p>by</p>
         <h4>OmarLeonel</h4>

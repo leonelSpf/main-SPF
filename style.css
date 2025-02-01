@@ -6,6 +6,7 @@
   --Color-WhiteGhost: #f0eff4;
   --Color-BlackNight: #141115;
   --Color-gray: #e5e5e5;
+  --Color-beigedGold: #c8aa6e;
 }
 * {
   padding: 0;
@@ -15,10 +16,7 @@
 html {
   scroll-behavior: smooth;
   filter: sepia(20%) hue-rotate(10deg) brightness(95%) contrast(90%);
-  /* para filtro azul proteccion */
-  /* color-scheme: light dark; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-
+  /* overflow: hidden; */
   font-family: "Raleway", sans-serif;
 }
 h1 {
@@ -44,14 +42,18 @@ img {
 }
 h2 {
   background-color: var(--Color-WhiteGhost);
-  border-bottom: 1px solid;
-  border-top: 1px solid;
   padding: 0.5rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: sticky;
   top: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.proTips {
+  background-color: var(--Color-WhiteGhost);
+  margin-left: 0.5rem;
 }
 header {
   padding: 0 0.5rem;
@@ -64,7 +66,7 @@ header .btn-modalContainer #headerClosedModalAboutMe {
   cursor: pointer;
 }
 main {
-  height: 100dvh;
+  /* height: 100dvh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -219,18 +221,20 @@ main {
   align-self: end;
 }
 @keyframes aboutmeImg {
-  0% {
+  0%,
+  25% {
     filter: drop-shadow(0 0 2px red) drop-shadow(0 0 12px red);
   }
   50% {
     filter: drop-shadow(0 0 12px red) drop-shadow(0 0 22px red);
   }
+  0%,
   100% {
     filter: drop-shadow(0 0 2px red) drop-shadow(0 0 12px red);
   }
 }
 .modal-aboutMe .aboutme-box img {
-  animation: aboutmeImg 1.5s linear infinite;
+  animation: aboutmeImg 500ms ease-in infinite;
 }
 .modal-aboutMe .aboutme-box:nth-of-type(2) {
   width: 100%;
@@ -276,7 +280,7 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   position: fixed;
   top: 5rem;
@@ -285,12 +289,22 @@ main {
 }
 .asideContainer-boxsection {
   width: 100%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem 0 1rem;
 }
-.asideContainer-boxsection .aside-boxSection {
+.asideContainer-boxsection > .aside-boxSection h3 {
+  width: 100%;
+  background-color: var(--Color-BlueLight);
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.asideContainer-boxsection > .aside-boxSection h3 > i {
+  margin-right: 0.5rem;
 }
 
 .asideContainer-boxsection .aside-boxSection li {
@@ -308,50 +322,24 @@ main {
   font-family: sans-serif;
 }
 .asideMenubtns {
-  /* background-color: red; */
   margin-top: 1rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1vh;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  position: relative;
 }
-.asideMenubtns h4 {
-  grid-area: 1/1/1/5;
-  background-color: var(--Color-BlackNight);
-  color: var(--Color-WhiteGhost);
-  text-align: center;
-  align-self: center;
-  border-radius: 1rem;
-  padding: 0.5rem;
-}
-
-.asideMenubtns button {
-  background-color: var(--Color-WhiteGhost);
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+.asideMenubtns button:disabled {
+  color: gray;
   border: none;
+  text-decoration: none;
+}
+.asideMenubtns button {
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 1.5vh;
-}
-.asideMenubtns button:nth-of-type(1) {
-  background-color: var(--Color-BlueGray);
-}
-.asideMenubtns button:nth-of-type(2) {
-  background-color: var(--Color-BlueLight);
-}
-.asideMenubtns button:nth-of-type(3) {
-  background-color: var(--Color-BlueLight);
-}
-.btn-exitAside {
-  /* position: absolute; */
-  /* right: 0; */
-  /* bottom: 1rem; */
-  /* display: flex; */
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--Color-beigedGold);
+  border: 2px solid var(--Color-beigedGold);
+  border-radius: 0.5rem;
+  line-height: 1.6;
+  /* border: 2px solid orange; */
 }
 .is-activeArticle-chainCommand .container-allCommands {
   height: 15vh;
@@ -399,32 +387,21 @@ main {
   flex-direction: column; */
 }
 #scaleGrades p {
-  /* height: 15vh; */
-  width: 100%;
-  font-weight: 800;
-  font-size: clamp(1.5rem, 3vh, 3rem);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  /* margin: auto; */
   color: var(--Color-WhiteGhost);
   background-color: var(--Color-BlueDark);
-  padding: 1rem;
-  text-align: center;
+  padding: 0.5rem;
+  /* text-align: center; */
 }
 .grades {
   background-color: var(--Color-BlueDark);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* ☢️☢️ añadir el template row */
-  /* grid-template-rows: 3rem repeat(2, 1fr); */
   gap: 2vh;
   padding: 0.5rem;
 }
 .grades .containerGrades {
   color: white;
   text-align: center;
-  /* position: relative; */
 }
 .grades figcaption {
   width: 100%;
@@ -440,7 +417,6 @@ main {
   font-size: clamp(1.5rem, 3vh, 3rem);
   grid-area: 1/1 /1/4;
   color: var(--Color-WhiteGhost);
-  /* color: var(--Color-BlueLight); */
 }
 
 .containerGrades img {
@@ -467,4 +443,129 @@ main {
   padding: 0.5rem;
   font-size: clamp(1.5rem, 2vh, 3rem);
   font-weight: 800;
+}
+/* +++++SECTION introduce-MySelf+++++
++++++++++++++++++++++++++++++++++++
+ */
+.sections:nth-of-type(6) .articles {
+  background-color: var(--Color-BlueDark);
+  color: var(--Color-WhiteGhost);
+  width: 100%;
+  height: 100vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mePresento > p {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+}
+#mePresento ol {
+  /* background-color: red; */
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+/* ¨*****SECTION ARMY******
+***** ***************************/
+
+#armamento section {
+  background-color: var(--Color-BlueDark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  /* height: 100vh; */
+  /* padding: 1rem; */
+}
+#armamento section h2 i {
+  transform: rotate(90deg);
+  margin-right: 0.5rem;
+}
+#armamento section h2 {
+  /* width: 100%; */
+  background-color: var(--Color-BlackNight);
+  color: var(--Color-beigedGold);
+  /* display: flex; */
+  align-items: center;
+
+  justify-content: start;
+  /* text-align: center; */
+  /* margin-top: 0.5rem; */
+  top: 3rem;
+}
+#armamento #armamento-MedidasSeguridad ol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  line-height: 1.6;
+}
+#armamento-MedidasSeguridad .armamento-medidasSeguridad-box {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+#armamento-MedidasSeguridad .armamento-medidasSeguridad-box details {
+  background-color: var(--Color-beigedGold);
+  line-height: 1.6;
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+}
+#armamento-MedidasSeguridad
+  .armamento-medidasSeguridad-box
+  details
+  summary:last-of-type {
+  /* text-align: start; */
+  background-color: red;
+  text-align: center;
+}
+
+#armamento #armamento-MedidasSeguridad {
+  /* padding: 1.5rem; */
+}
+/* ☢️☢️☢️PRUEBAS IMAGENES☢️☢️ */
+.pruebaImagenes {
+  /* background-color: green;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.containerImageTest {
+  background-color: red;
+  /* width: 200px; */
+  /* position: absolute; */
+  /* overflow: hidden; */
+  /* display: flex; */
+  border: 3px solid;
+  /* mix-blend-mode: multiply; */
+  /* justify-content: center;
+  align-items: center; */
+  /* z-index: 999; */
+}
+.containerImageTest:first-of-type {
+  /* overflow: hidden; */
+  /* mix-blend-mode: multiply; */
+}
+.containerImageTest-inset {
+  /* width: 300px; */
+  background-color: rebeccapurple;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: absolute; */
+  /* z-index: 2; */
 }
