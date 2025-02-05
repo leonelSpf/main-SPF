@@ -50,10 +50,15 @@ h2 {
   top: 0;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  z-index: 5;
 }
 .proTips {
   background-color: var(--Color-WhiteGhost);
   margin-left: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0 0.5rem;
+  /* text-align: cente; */
+  /* padding: 0.5rem; */
 }
 header {
   padding: 0 0.5rem;
@@ -322,6 +327,7 @@ main {
   font-family: sans-serif;
 }
 .asideMenubtns {
+  /* background-color: gray; */
   margin-top: 1rem;
 }
 .asideMenubtns button:disabled {
@@ -339,7 +345,35 @@ main {
   border: 2px solid var(--Color-beigedGold);
   border-radius: 0.5rem;
   line-height: 1.6;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  justify-content: center;
   /* border: 2px solid orange; */
+}
+.asideMenubtns button:nth-child(4) {
+  /* background-color: red; */
+  /* align-items: center; */
+  /* align-self: center; */
+  /* justify-content: center; */
+  display: flex;
+  font-size: 2vh;
+  margin-top: 1rem;
+  width: 50%;
+  order: 1;
+}
+
+.asideMenubtns .btn-exitAside {
+  /* display: flex; */
+  /* margin: auto;
+  left: 3rem;
+  bottom: 9rem; */
+  /* left: 0; */
+  /* position: absolute; */
+
+  color: white;
+  filter: drop-shadow(0 0 2px white);
+  /* background-color: red; */
 }
 .is-activeArticle-chainCommand .container-allCommands {
   height: 15vh;
@@ -486,7 +520,9 @@ main {
   align-items: center;
   align-content: center;
   /* height: 100vh; */
-  /* padding: 1rem; */
+  padding: 1rem;
+  /* position: relative; */
+  /* z-index: 5; */
 }
 #armamento section h2 i {
   transform: rotate(90deg);
@@ -503,6 +539,8 @@ main {
   /* text-align: center; */
   /* margin-top: 0.5rem; */
   top: 3rem;
+  /* z-index: 10; */
+  /* position: sticky; */
 }
 #armamento #armamento-MedidasSeguridad ol {
   width: 100%;
@@ -517,7 +555,9 @@ main {
   margin-bottom: 2rem;
 }
 #armamento-MedidasSeguridad .armamento-medidasSeguridad-box details {
-  background-color: var(--Color-beigedGold);
+  padding: 0 0.5rem;
+  background-color: gray;
+  border-radius: 0.5rem;
   line-height: 1.6;
   margin-top: 3rem;
   width: 100%;
@@ -527,13 +567,109 @@ main {
   .armamento-medidasSeguridad-box
   details
   summary:last-of-type {
-  /* text-align: start; */
   background-color: red;
   text-align: center;
 }
+#armamento-CirculoFuego {
+  height: 100vh;
+}
+#armamento-CirculoFuego > p {
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+}
+#armamento-CirculoFuego .circuloFuego-box {
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-top: 1rem; */
+}
+#armamento-CirculoFuego .circuloFuego-box > details {
+  border: 2px solid var(--Color-beigedGold);
+  /* box-shadow: inset 0 0 7px 2px var(--Color-beigedGold); */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+#armamento-CirculoFuego .circuloFuego-box > details summary {
+  line-height: 1.6;
+}
 
-#armamento #armamento-MedidasSeguridad {
-  /* padding: 1.5rem; */
+#armamento-CaracteristicArma .caracteristicArma-Content {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+#armamento-CaracteristicArma .caracteristicArma-Box {
+  width: 170px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--Color-beigedGold);
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  /* z-index: -1; */
+  /* padding: 1rem; */
+}
+
+.caracteristicArma-Box > img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  object-position: 10%;
+}
+.caracteristicArma-Box > .textArmy-type {
+  /* background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.801) 50%,
+    var(--Color-beigedGold) 95%
+  ); */
+  background-color: var(--Color-BlueDark);
+  /* border: 1px solid; */
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  color: gray;
+  /* position: relative; */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  /* z-index: -1; */
+}
+.caracteristicArma-Box > .textArmy-model {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+  /* width: 100%; */
+  /* margin-left: 0.5rem; */
+  /* margin-bottom: 1rem; */
+  /* line-height: 1.6; */
+  text-underline-offset: 7px;
+  /* bottom: 1rem; */
+}
+.caracteristicArma-Box > .textArmy-model a {
+  /* background-color: red; */
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  height: 90%;
+  width: 100%;
 }
 /* ☢️☢️☢️PRUEBAS IMAGENES☢️☢️ */
 .pruebaImagenes {
@@ -568,4 +704,48 @@ main {
   /* align-items: center; */
   /* position: absolute; */
   /* z-index: 2; */
+}
+.boxesflash {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  position: absolute;
+  margin-top: -2rem;
+  display: flex;
+}
+.containerflashers {
+  width: 40px;
+  height: 10px;
+}
+.containerflashers:nth-of-type(1) {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 0.3rem;
+  opacity: 0.3;
+  animation: flashblue 0.3s alternate infinite;
+}
+.containerflashers:nth-of-type(2) {
+  animation: flashred 0.4s alternate infinite;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 0.3rem;
+  opacity: 0.4;
+}
+@keyframes flashred {
+  0% {
+    box-shadow: inset -11px 0 12px 4px red;
+  }
+  100% {
+    box-shadow: inset 1px 0 0px 4px red;
+    opacity: 1;
+  }
+}
+@keyframes flashblue {
+  0% {
+    box-shadow: inset 11px 0 12px 4px #135dd8;
+  }
+  100% {
+    box-shadow: inset 1px 0 0px 4px #135dd8;
+    opacity: 1;
+  }
 }
