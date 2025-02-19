@@ -29,9 +29,7 @@ export default function phrasesRandom() {
         };
       }
       const randomPhraseData = getRandomPhrase(data);
-      console.log(
-        `Personaje: ${randomPhraseData.characterName}, Skin: ${randomPhraseData.skinName}, Frase: ${randomPhraseData.phrase}, Audio ID: ${randomPhraseData.audioId}`
-      );
+
       const $phraseRandom = document.getElementById("phraseRandom");
       $phraseRandom.innerHTML = `~ "${randomPhraseData.phrase}"`;
       const $idAudio = document.getElementById("phraseAudio");

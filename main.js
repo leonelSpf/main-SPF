@@ -7,6 +7,7 @@ import section_chainOfCommands from "./all_Modules_Js/section_chainOfCommands.js
 import btnScrollUp from "./all_Modules_Js/btn_ScrollUp.js";
 import modalAboutMe from "./all_Modules_Js/modal-AboutMe.js";
 import phrasesRandom from "./all_Modules_Js/phrases_Random.js";
+import audioDescription from "./all_Modules_Js/audio_description_army.js";
 
 const d = document;
 
@@ -20,6 +21,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   sectionsBasic();
   btnScrollUp(".btn-scrollUp");
   phrasesRandom();
+  audioDescription(".des-box-controlAudio");
 });
 modalAboutMe(".modal-container");
 // document.querySelector(".ytd-transcript-segment-list-renderer");
