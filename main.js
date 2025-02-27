@@ -8,6 +8,7 @@ import btnScrollUp from "./all_Modules_Js/btn_ScrollUp.js";
 import modalAboutMe from "./all_Modules_Js/modal-AboutMe.js";
 import phrasesRandom from "./all_Modules_Js/phrases_Random.js";
 import audioDescription from "./all_Modules_Js/audio_description_army.js";
+import holaMundo from "./all_Modules_Js/holamundoEjercicio.js";
 
 const d = document;
 
@@ -22,6 +23,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   btnScrollUp(".btn-scrollUp");
   phrasesRandom();
   audioDescription(".des-box-controlAudio");
+  holaMundo();
 });
 modalAboutMe(".modal-container");
 // document.querySelector(".ytd-transcript-segment-list-renderer");

@@ -1,22 +1,24 @@
 export default function audioDescription(btnAudio) {
-  const boxControlAudio = document.querySelector(".des-box-controlAudio"),
-    audioPlay = document.querySelectorAll(".audioArmyDescription");
-  for (let i = 0; i < audioPlay.length; i++) {
-    const el = audioPlay[i];
-    console.log(el.setAttribute("controls", ""));
-    el.setAttribute("controls", "");
-  }
+  const boxControlAudio = document.querySelectorAll(".des-box-controlAudio");
+  const audioPlay = document.querySelectorAll(".audioArmyDescription");
 
-  console.log();
+  boxControlAudio.forEach((box, index) => {
+    const audio = audioPlay[index];
+    const button = document.createElement("i");
+    button.classList.add("fa-solid", "fa-volume-high");
 
-  document.addEventListener("click", (e) => {
-    if (e.target === boxControlAudio || e.target.matches(`${btnAudio} *`)) {
-      console.log("caja");
-      boxControlAudio.children[0].classList.replace("fa-play", "fa-pause");
-      audioPlay.play();
-    } else {
-      boxControlAudio.children[0].classList.replace("fa-pause", "fa-play");
-      audioPlay.pause();
-    }
+    button.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        button.classList.remove("fa-solid", "fa-volume-high");
+        button.classList.remove("fa-solid", "fa-play");
+        button.classList.add("fa-solid", "fa-pause");
+      } else {
+        audio.pause();
+        button.classList.add("fa-solid", "fa-play");
+      }
+    });
+
+    box.appendChild(button);
   });
 }

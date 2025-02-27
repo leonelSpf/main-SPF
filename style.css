@@ -30,11 +30,9 @@ a {
   color: var(--Color-WhiteGhost);
 }
 body {
-  /* display: flex; */
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(to bottom, #345995, #283e64); */
 }
 img {
   max-width: 100%;
@@ -60,6 +58,27 @@ h2 {
   /* text-align: cente; */
   /* padding: 0.5rem; */
 }
+.nerdy-class {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #c26b00;
+  background: radial-gradient(
+    circle,
+    #c26b00 0%,
+    #0000006e 25%,
+    #00000000 100%
+  );
+  /* border: 1px solid darkorange; */
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: -2vh;
+  & .nerdyClassFinger {
+    transform: rotate(-25deg) translateX(7px) translateY(-4px);
+  }
+}
+
 header {
   padding: 0 0.5rem;
   display: flex;
@@ -166,7 +185,6 @@ main {
   display: none;
   visibility: hidden;
   opacity: 0;
-  /* z-index: -1; */
 }
 .modal-container {
   background-color: var(--Color-BlueDark);
@@ -220,8 +238,6 @@ main {
   color: white;
 }
 .modal-aboutMe .aboutme-box:nth-of-type(1) {
-  /* background-color: #00a6fb; */
-  /* width: 100%; */
   grid-area: 1/1/2/2;
   align-self: end;
 }
@@ -247,10 +263,6 @@ main {
   padding: 1rem;
   align-self: center;
   justify-items: center;
-  /* justify-content: center; */
-  /* margin-left: 25%; */
-  /* margin-right: 50%; */
-  /* transform: translate(-50%); */
 }
 .modal-aboutMe .aboutme-box:nth-of-type(3) {
   grid-area: 2/1/3/3;
@@ -264,6 +276,8 @@ main {
   font-size: 1.5rem;
   border: 1px solid var(--Color-BlueLight);
   border-radius: 0.5rem;
+  border-radius: 53% 47% 100% 0% / 100% 100% 0% 0%;
+
   filter: drop-shadow(0px 0px 3px var(--Color-WhiteGhost));
   cursor: pointer;
 }
@@ -332,7 +346,6 @@ main {
   font-family: sans-serif;
 }
 .asideMenubtns {
-  /* background-color: gray; */
   margin-top: 1rem;
 }
 .asideMenubtns button:disabled {
@@ -354,13 +367,8 @@ main {
   justify-items: center;
   justify-self: center;
   justify-content: center;
-  /* border: 2px solid orange; */
 }
 .asideMenubtns button:nth-child(4) {
-  /* background-color: red; */
-  /* align-items: center; */
-  /* align-self: center; */
-  /* justify-content: center; */
   display: flex;
   font-size: 2vh;
   margin-top: 1rem;
@@ -369,16 +377,8 @@ main {
 }
 
 .asideMenubtns .btn-exitAside {
-  /* display: flex; */
-  /* margin: auto;
-  left: 3rem;
-  bottom: 9rem; */
-  /* left: 0; */
-  /* position: absolute; */
-
   color: white;
   filter: drop-shadow(0 0 2px white);
-  /* background-color: red; */
 }
 .is-activeArticle-chainCommand .container-allCommands {
   height: 15vh;
@@ -394,16 +394,12 @@ main {
   justify-content: center;
   align-items: center;
   padding: 4px;
-  /* position: relative; */
 }
 .container-allCommands:nth-child(even) {
   background-color: var(--Color-WhiteGhost);
 }
 .container-allCommands .container-box * {
-  /* background-color: rebeccapurple; */
   list-style: none;
-
-  /* height: 100%; */
 }
 .box-userChains li:first-of-type {
   font-weight: 700;
@@ -412,7 +408,6 @@ main {
 #pruebas {
   width: 100%;
   display: inline-block;
-  /* height: 100vh; */
   background-color: var(--Color-gray);
   background-color: var(--Color-BlueDark);
   color: var(--Color-gray);
@@ -420,16 +415,11 @@ main {
 /* +++++SECTION HIERARCHICAL SCALE+++++
 +++++++++++++++++++++++++++++++++++
  */
-.sections:nth-of-type(2) {
-  /* background-color: red;
-  display: flex;
-  flex-direction: column; */
-}
+
 #scaleGrades p {
   color: var(--Color-WhiteGhost);
   background-color: var(--Color-BlueDark);
   padding: 0.5rem;
-  /* text-align: center; */
 }
 .grades {
   background-color: var(--Color-BlueDark);
@@ -527,20 +517,27 @@ main {
   padding: 1rem;
   position: relative;
 }
+#armamento-CaracteristicArma .btnsArmy-content {
+  position: sticky;
+  top: 88dvh;
+  align-self: flex-end;
+  right: calc(2rem * 2);
 
+  z-index: 6;
+}
+.btnArmy-box {
+  padding: 1rem;
+  margin: 0.3rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px 1px var(--color-light-white);
+  cursor: pointer;
+}
 #armamento section h2 {
-  /* width: 100%; */
   background-color: var(--Color-BlackNight);
   color: var(--Color-beigedGold);
-  /* display: flex; */
   align-items: center;
-
   justify-content: start;
-  /* text-align: center; */
-  /* margin-top: 0.5rem; */
   top: 3rem;
-  /* z-index: 10; */
-  /* position: sticky; */
 }
 #armamento section h2 i {
   transform: rotate(90deg);
@@ -592,8 +589,6 @@ main {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  /* z-index: 999; */
-  /* border: 1px solid var(); */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -608,11 +603,6 @@ main {
   font-size: 5vw;
   text-align: center;
   background-color: rgba(128, 128, 128, 0.514);
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* align-content: center; */
-  /* align-self: center; */
-  /* background-color: red; */
 }
 #armamento-CirculoFuego > .fireCircleBox-img > figure > picture img {
   width: 100%;
@@ -624,8 +614,7 @@ main {
   width: 100%;
   height: 100%;
 }
-#armamento-CirculoFuego > .fireCircleBox-img {
-}
+
 #armamento-CirculoFuego > .fireCircleBox-img figure:nth-of-type(1) {
   transform: translate(-80px, -200px);
 }
@@ -643,11 +632,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin-top: 1rem; */
 }
 #armamento-CirculoFuego .circuloFuego-box > details {
   border: 2px solid var(--Color-beigedGold);
-  /* box-shadow: inset 0 0 7px 2px var(--Color-beigedGold); */
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -658,7 +645,6 @@ main {
 
 #armamento-CaracteristicArma .caracteristicArma-Content {
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -678,8 +664,6 @@ main {
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
-  /* z-index: -1; */
-  /* padding: 1rem; */
 }
 
 .caracteristicArma-Box > img {
@@ -703,8 +687,6 @@ main {
   text-transform: uppercase;
   font-size: small;
   font-family: monospace;
-  /* font-size: 1.5vh; */
-  /* z-index: -1; */
 }
 .caracteristicArma-Box > .textArmy-model {
   position: absolute;
@@ -713,16 +695,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1rem; */
-  /* width: 100%; */
-  /* margin-left: 0.5rem; */
-  /* margin-bottom: 1rem; */
-  /* line-height: 1.6; */
   text-underline-offset: 7px;
-  /* bottom: 1rem; */
 }
 .caracteristicArma-Box > .textArmy-model a {
-  /* background-color: red; */
   display: inline-flex;
   align-content: center;
   justify-content: center;
@@ -745,25 +720,30 @@ main {
   font-family: "Bebas Neue", serif;
   letter-spacing: 0.3rem;
   color: var(--Color-WhiteGhost);
-  /* line-height: 1.6; */
 }
 
 #armamento .caracteristicArma-inf {
-  /* background-color: green; */
   background-color: #333;
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
-  /* position: absolute; */
   top: 0;
-  /* z-index: 999; */
 }
-.caracteristicArma-inf .CA-inf-descrition {
-  /* height: 10vh; */
-  /* display: flex; */
 
-  align-items: end;
+.CA-inf-descrition > ul {
+  margin-top: 1rem;
+}
+.CA-inf-descrition > ul > li > strong {
+  text-align: start;
+}
+.CA-inf-descrition > ul > li {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  border-radius: 0.3rem;
+
+  padding: 1rem 0.3rem;
 }
 .caracteristicArma-inf .moredescriptionContent {
   background-color: rebeccapurple;
@@ -799,7 +779,6 @@ main {
   height: 50px;
   padding: 1rem;
   margin-inline: auto;
-  margin-top: 1rem;
   overflow: hidden;
   text-align: center;
 }
@@ -840,9 +819,7 @@ main {
   height: 80%;
   top: 50%;
   bottom: 50%;
-  /* transform: translate(-50%, -50%); */
   left: calc(2px * 2);
-  /* right: 50%; */
   margin: auto;
   background-color: var(--blue-border);
   background-color: black;
@@ -853,6 +830,11 @@ main {
   position: relative;
   z-index: 2;
   color: var(--Color-beigedGold);
+}
+
+.sectionContainer-medium {
+  /* background-color: #d4af37; */
+  height: 100vh;
 }
 /* ☢️☢️☢️PRUEBAS IMAGENES☢️☢️ */
 .prueba {
