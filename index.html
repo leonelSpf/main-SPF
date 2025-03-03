@@ -31,16 +31,13 @@
           src="./assets/img/yoloImg.png"
           alt="yoloImg"
         />
-        <!-- <button>
-          <i class="fa-regular fa-thumbs-up"></i>
-        </button> -->
       </div>
     </header>
 
     <aside class="aside-allsections">
       <div class="asideContainer-boxsection">
         <ul class="aside-boxSection">
-          <h3 style="color: white">
+          <h3>
             <i class="fa-solid fa-graduation-cap"></i>CONOCIMIENTOS BASICO
           </h3>
           <li><a href="#CadenaMando">Cadena de mando</a></li>
@@ -48,14 +45,14 @@
           <li><a href="#misionInstitucional">Mision</a></li>
           <li><a href="#visionInstitucional">Vision</a></li>
           <li><a href="#mePresento">Presentation</a></li>
-          <li><a href="#armamento">Piramide del Uso de la Fuerza</a></li>
           <li><a href="#armamento">Armamento</a></li>
+          <li><a href="#armamento">Piramide del Uso de la Fuerza</a></li>
           <li><a href="#">Circulo de Fuego</a></li>
           <li><a href="#">Uso de la Fuerza</a></li>
           <!-- <li><a href="#CadenaMando">Circulo de Fuego</a></li> -->
         </ul>
         <ul class="aside-boxSection hidden">
-          <h3 style="color: white">
+          <h3>
             <i class="fa-solid fa-scale-balanced"></i>CONOCIMIENTOS
             FUNDAMENTALES
           </h3>
@@ -78,7 +75,7 @@
           <li><a href="#CadenaMando">Proteccion a Personas</a></li>
         </ul>
         <ul class="aside-boxSection hidden">
-          <h3 style="color: white">
+          <h3>
             <i class="fa-solid fa-users-rectangle"></i>INTRODUCCION A LA
             INSTITUCION
           </h3>
@@ -90,7 +87,6 @@
         </ul>
       </div>
       <section class="asideMenubtns">
-        <!-- <h4>mas opciones <i class="fa-solid fa-caret-down"></i></h4> -->
         <button id="btnAsideSections-Basic" disabled>Basico</button>
         <button id="btnAsideSections-Medium">Fundamentales</button>
         <button id="btnAsideSections-Intruduction">Introduccion</button>
@@ -101,9 +97,7 @@
     </aside>
     <div class="modal-container">
       <div class="modal-boxPhrases">
-        <!-- <h3>[phrases Random/Audio]</h3> -->
         <h3 id="phraseRandom"></h3>
-        <!-- <button><i class="fa-solid fa-circle-play"></i></button> -->
         <audio id="phraseAudio" src=""></audio>
       </div>
       <div class="modal-aboutMe">
@@ -116,7 +110,7 @@
             <div class="containerflashers"></div>
           </div>
           <h3>Omar Leonel</h3>
-          <h5>Fronted Developer</h5>
+          <h5>Frontend Developer</h5>
         </div>
         <div class="aboutme-box">
           <details>
@@ -150,13 +144,8 @@
       <!-- 🔺🔺🔺  BASIC SECTION 🔺🔺🔺 -->
       <section class="sectionContainer-basic" data-section="section-basic">
         <section class="sections">
-          <!-- <div class="container-allCommands"></div> -->
-          <!-- <article class="article-chainCommand"></article> -->
           <article class="articles article-chainCommand" id="CadenaMando">
             <h2>Cadena de Mando <i class="fa-solid fa-caret-down"></i></h2>
-            <!-- <div class="btnToggle-tbl">
-            <i class="fa-solid fa-table-list"></i>
-          </div> -->
             <div class="btnToggle-tbl">
               <i class="fa-solid fa-table"></i>
             </div>
@@ -185,7 +174,6 @@
 
         <section class="sections" id="scaleGrades">
           <h2>Escala Jerárquica<i class="fa-solid fa-caret-down"></i></h2>
-          <!-- <p>en el servicio de Proteccion Federal</p> -->
           <p>
             <i class="fa-regular fa-lightbulb"></i>
             <samp
@@ -196,18 +184,18 @@
             >
           </p>
 
-          <aticle class="grades" id="basicScale">
+          <article class="grades" id="basicScale">
             <h3>Escala Basica</h3>
-          </aticle>
-          <aticle class="grades" id="oficialScale">
+          </article>
+          <article class="grades" id="oficialScale">
             <h3>Escala Oficial</h3>
-          </aticle>
-          <aticle class="grades" id="inspectorScale">
+          </article>
+          <article class="grades" id="inspectorScale">
             <h3>Escala Inspector</h3>
-          </aticle>
-          <aticle class="grades" id="ComisarioScale">
+          </article>
+          <article class="grades" id="ComisarioScale">
             <h3>Escala Comisario</h3>
-          </aticle>
+          </article>
         </section>
         <section class="sections">
           <h2>Mision<i class="fa-solid fa-caret-down"></i></h2>
@@ -436,19 +424,19 @@
               </div>
             </section>
             <section id="armamento-CaracteristicArma">
-              <h2>
+               <h2>
                 <i class="fa-solid fa-turn-up"></i>
                 Caracteristicas de las armas
-              </h2>
-              <br>
-              <div class="btnsArmy-content">
+               </h2>
+               <br>
+                <div class="btnsArmy-content">
                 <a href="#armamento-CaracteristicArma" class="btnArmy-box btnUp"><i class="fa-solid fa-reply"></i></a>
                 <a href="#piramideDelaFuerza" class="btnArmy-box btnDown"><i class="fa-solid fa-arrow-down-wide-short"></i></a>
-              </div>
-              <p> <i class="fa-regular fa-lightbulb"></i><mark class="proTips"> 
+                </div>
+               <p> <i class="fa-regular fa-lightbulb"></i><mark class="proTips"> 
                 Selecciona una tarjeta</mark></p>
               
-              <div class="caracteristicArma-Content">
+                <div class="caracteristicArma-Content">
                 <figure class="caracteristicArma-Box">
                   <img src="./assets/img/army/berettaPistolFace.png" alt="imgArmy" />
                   <figcaption class="textArmy-type">Pistola</figcaption>
@@ -485,12 +473,12 @@
                   <figcaption class="textArmy-model"><a href="#arma-Tavor">Tavor TAR21</a></figcaption>
                 </figure>
                 <!-- <h3><a href="https://codepen.io/drygiel/pen/LXmPZz">Responsive Vertical Progress Steps</a></h3> -->
-              </div>
-              <br>
-              <br>
-              <br>
+               </div>
+               <br>
+               <br>
+                <br>
              
-              <section class="caracteristicArma-inf " id="arma-Beretta">
+               <section class="caracteristicArma-inf " id="arma-Beretta">
                 <h2>Beretta</h2>
                 <div class="CA-inf-img">
                   <img src="./assets/img/army/BerettaPistol.png" alt="armaImg">
@@ -522,88 +510,52 @@
                       <li><strong>Seguro:</strong> Ambidiestro</li>
                     </ul>
                   </div>
-                  <div class="des-box-reference"></div>
-                  <div class="des-box-nomenclature"></div>
-                  <div class="des-box-especification"></div>
                 </div>
-                <!-- <div class="moredescriptionContent">
-                  
-                  <ul class="stech__item-list"><li class="stech__info">
-                                    <div class="stech__info-title">Modelos</div>
-                                    <div class="stech__info-text">92 FS</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Magazine Capacity</div>
-                                    <div class="stech__info-text">15</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Acción</div>
-                                    <div class="stech__info-text">Single/Double</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Calibre</div>
-                                    <div class="stech__info-text">9X19 (PARA)</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Altura</div>
-                                    <div class="stech__info-text">143 mm</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Capacidad del cargador</div>
-                                    <div class="stech__info-text">10</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Acabado de carro obturador</div>
-                                    <div class="stech__info-text">Black</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Ancho</div>
-                                    <div class="stech__info-text">38 mm</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Color/Acabado de empuñaduras</div>
-                                    <div class="stech__info-text">Negro</div>
-                                    </li><li class="stech__info">
-                                    <div class="stech__info-title">Color/Acabado de cañón</div>
-                                    <div class="stech__info-text">Negro</div>
-                                    </li>
-                    </ul>
-                </div> -->
-                <!-- <span class="nerdy-class"><i class="fa-solid fa-graduation-cap"></i></span> -->
                 <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
+                <div class="CA-inf-nerdy">
+                  <a href="https://www.youtube.com/watch?v=-vxVe0iDqB0">
+                    <i class="fa-solid fa-video"></i> Video demostrativo Nomenclatura </a>
+                  <a href="https://www.beretta.com/content/dam/beretta/manuals/pistols/92-series/C60373%20003%20ESP%20A4.cleaned.pdf">
+                    <i class="fa-solid fa-book"></i> Manual Beretta Español 25/02/2025</a>
 
-                <a href="https://www.youtube.com/watch?v=-vxVe0iDqB0">Video demostrativo Nomenclatura </a>
-                <a href="https://www.beretta.com/content/dam/beretta/manuals/pistols/92-series/C60373%20003%20ESP%20A4.cleaned.pdf">Manual Beretta Español 25/02/2025</a>
-
-                <!-- ⚠️⚠️⚠️ MODELO 3D DESBLOQUEAR -->
-                <!-- <div class="sketchfab-embed-wrapper">
-                  <iframe
-                    title="Beretta 92 FS"
-                    frameborder="0"
-                    allowfullscreen
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                    allow="autoplay; fullscreen; xr-spatial-tracking"
-                    xr-spatial-tracking
-                    execution-while-out-of-viewport
-                    execution-while-not-rendered
-                    web-share
-                    src="https://sketchfab.com/models/c2c04e82d74a41b08288dbd6027c43dc/embed"
-                  >
-                  </iframe>
-                  <p
-                    style="
-                      font-size: 13px;
-                      font-weight: normal;
-                      margin: 5px;
-                      color: #4a4a4a;
-                    "
-                  >
-                    <a
-                      href="https://sketchfab.com/3d-models/beretta-92-fs-c2c04e82d74a41b08288dbd6027c43dc?utm_medium=embed&utm_campaign=share-popup&utm_content=c2c04e82d74a41b08288dbd6027c43dc"
-                      target="_blank"
-                      rel="nofollow"
-                      style="font-weight: bold; color: #1caad9"
+                  <div class="sketchfab-embed-wrapper">
+                    <iframe
+                      title="Beretta 92 FS"
+                      frameborder="0"
+                      allowfullscreen
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                      allow="autoplay; fullscreen; xr-spatial-tracking"
+                      xr-spatial-tracking
+                      execution-while-out-of-viewport
+                      execution-while-not-rendered
+                      web-share
+                      src="https://sketchfab.com/models/c2c04e82d74a41b08288dbd6027c43dc/embed"
                     >
-                      Beretta 92 FS
-                    </a>
-                    
-                  </p>
-                </div> -->
-              </section>
-              <section class="caracteristicArma-inf " id="arma-Aztk">
+                    </iframe>
+                    <p
+                      style="
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin: 5px;
+                        color: #4a4a4a;
+                      "
+                    >
+                      <a
+                        href="https://sketchfab.com/3d-models/beretta-92-fs-c2c04e82d74a41b08288dbd6027c43dc?utm_medium=embed&utm_campaign=share-popup&utm_content=c2c04e82d74a41b08288dbd6027c43dc"
+                        target="_blank"
+                        rel="nofollow"
+                        style="font-weight: bold; color: #1caad9"
+                      >
+                        Beretta 92 FS
+                      </a>
+                      
+                    </p>
+                  </div>
+                </div>
+
+                </section>
+                <section class="caracteristicArma-inf " id="arma-Aztk">
                 <h2>AZTK</h2>
                 <div class="CA-inf-img">
                   <img src="./assets/img/army/AZTKPistol.png" alt="armaImg">
@@ -639,11 +591,15 @@
                     <li><strong>Riel para accesorios:</strong> Incluye un riel en la parte inferior del armazón para la colocación de accesorios como láser o linterna</li>
                   </ul>
                 <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
-                <a href="#">parace que no hay nada por aqui 👀</a>
-                
+                <div class="CA-inf-nerdy">
+                  <span>No se dispone de información adicional en este momento. 👀</span>
+
                 </div>
-              </section>
-              <section class="caracteristicArma-inf " id="arma-Mendoza">
+
+                
+                
+                </section>
+               <section class="caracteristicArma-inf " id="arma-Mendoza">
                 <h2>Mendoza</h2>
                 <div class="CA-inf-img">
                   <img src="./assets/img/army/mendoza.png" alt="armaImg">
@@ -655,7 +611,6 @@
                 </div>
                 <div class="CA-inf-descrition">
                   <div class="des-box">
-                    <!-- <h4>92FS</h4> -->
                       <audio class="audioArmyDescription" src="./assets/img/army/Sound/mendozaHM3Sound.mp3" >textDescription</audio>
                     <div class="des-box-controlAudio"></div>
                     <p>La HM-3 es conocida por su diseño compacto y ligero, lo que la hace fácil de transportar y manejar. Su capacidad de fuego selectivo y semiautomático la hace adecuada para diversas aplicaciones, incluyendo uso policial, militar y defensa personal.</p>
@@ -676,10 +631,14 @@
                   </ul>
                 </div>
                 <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
-                <p>https://www.artstation.com/artwork/Al0PQX</p>
-                <a href="https://www.youtube.com/watch?v=WSZKyzc3Ack&t=332s">Video demostrativo Nomenclatura</a>
-              </section>
-              <section class="caracteristicArma-inf " id="arma-Galil">
+                <div class="CA-inf-nerdy">
+                  
+                  <a href="https://www.youtube.com/watch?v=WSZKyzc3Ack&t=332s">
+                    <i class="fa-solid fa-video"></i> Video demostrativo Nomenclatura</a>
+                </div>
+
+               </section>
+                <section class="caracteristicArma-inf " id="arma-Galil">
                 <h2>Galil </h2>
                 <div class="CA-inf-img">
 
@@ -715,48 +674,52 @@
                      
                     </ul>
                     <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
+                    <div class="CA-inf-nerdy">
+                      <a href="https://iwi.us/wp-content/uploads/2024/01/IWI-Galil-Ace-Manual.pdf">
+                        <i class="fa-solid fa-book"></i> Manual Galil ingles 25/02/2025</a>
+                      <a href="https://www.indumil.gov.co/producto/fusil-galil-ace-21/">
+                        <i class="fa-solid fa-book"></i> mas description</a>
+                      <div class="sketchfab-embed-wrapper">
+                        <iframe
+                          title="Ace 21"
+                          frameborder="0"
+                          allowfullscreen
+                          mozallowfullscreen="true"
+                          webkitallowfullscreen="true"
+                          allow="autoplay; fullscreen; xr-spatial-tracking"
+                          xr-spatial-tracking
+                          execution-while-out-of-viewport
+                          execution-while-not-rendered
+                          web-share
+                          src="https://sketchfab.com/models/84ed1f729e81498bad1c9ef95d24288e/embed"
+                        >
+                        </iframe>
+                        <p
+                          style="
+                            font-size: 13px;
+                            font-weight: normal;
+                            margin: 5px;
+                            color: #4a4a4a;
+                          "
+                        >
+                          <a
+                            href="https://sketchfab.com/3d-models/ace-21-cqb-low-poly-84ed1f729e81498bad1c9ef95d24288e?utm_medium=embed&utm_campaign=share-popup&utm_content=84ed1f729e81498bad1c9ef95d24288e"
+                            target="_blank"
+                            rel="nofollow"
+                            style="font-weight: bold; color: #1caad9"
+                          >
+                            Ace 21
+                          </a>
+                        
+                        
+                        </p>
+                      </div>
 
-                    <a href="https://iwi.us/wp-content/uploads/2024/01/IWI-Galil-Ace-Manual.pdf">Manual Galil ingles 25/02/2025</a>
-                    <a href="https://es.iwi.net/ace/ace-21/">Pagina </a>
-                    <a href="https://www.indumil.gov.co/producto/fusil-galil-ace-21/"> mas description</a>
+                    </div>
+
                 </div>
-                <div class="sketchfab-embed-wrapper">
-                  <iframe
-                    title="Ace 21 CQB (Low Poly)"
-                    frameborder="0"
-                    allowfullscreen
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                    allow="autoplay; fullscreen; xr-spatial-tracking"
-                    xr-spatial-tracking
-                    execution-while-out-of-viewport
-                    execution-while-not-rendered
-                    web-share
-                    src="https://sketchfab.com/models/84ed1f729e81498bad1c9ef95d24288e/embed"
-                  >
-                  </iframe>
-                  <p
-                    style="
-                      font-size: 13px;
-                      font-weight: normal;
-                      margin: 5px;
-                      color: #4a4a4a;
-                    "
-                  >
-                    <a
-                      href="https://sketchfab.com/3d-models/ace-21-cqb-low-poly-84ed1f729e81498bad1c9ef95d24288e?utm_medium=embed&utm_campaign=share-popup&utm_content=84ed1f729e81498bad1c9ef95d24288e"
-                      target="_blank"
-                      rel="nofollow"
-                      style="font-weight: bold; color: #1caad9"
-                    >
-                      Ace 21 CQB (Low Poly)
-                    </a>
-                  
-                  
-                  </p>
-                </div>
-              </section>
-              <section class="caracteristicArma-inf " id="arma-BusMaster">
+                </section>
+                <section class="caracteristicArma-inf " id="arma-BusMaster">
                 <h2>bush master</h2>
                 <div class="CA-inf-img">
                   <img src="./assets/img/army/bushMasterFusil.png" alt="armaImg">
@@ -792,43 +755,46 @@
                   </ul>
                 </div>
                 <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
-                <a href="https://www.bushmaster.com/content/Bushmaster%20Manual%202021.pdf">Manual Bushmaster 25/02/2025</a>
-                <div class="sketchfab-embed-wrapper">
-                  <iframe
-                    title="M4 Carbine"
-                    frameborder="0"
-                    allowfullscreen
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                    allow="autoplay; fullscreen; xr-spatial-tracking"
-                    xr-spatial-tracking
-                    execution-while-out-of-viewport
-                    execution-while-not-rendered
-                    web-share
-                    src="https://sketchfab.com/models/079049c48d1346bdaa492ec97a8980d6/embed"
-                  >
-                  </iframe>
-                  <p
-                    style="
-                      font-size: 13px;
-                      font-weight: normal;
-                      margin: 5px;
-                      color: #4a4a4a;
-                    "
-                  >
-                    <a
-                      href="https://sketchfab.com/3d-models/m4-carbine-079049c48d1346bdaa492ec97a8980d6?utm_medium=embed&utm_campaign=share-popup&utm_content=079049c48d1346bdaa492ec97a8980d6"
-                      target="_blank"
-                      rel="nofollow"
-                      style="font-weight: bold; color: #1caad9"
+                <div class="CA-inf-nerdy">
+                  <a href="https://www.bushmaster.com/content/Bushmaster%20Manual%202021.pdf">
+                    <i class="fa-solid fa-book"></i> Manual Bushmaster 25/02/2025</a>
+                  <div class="sketchfab-embed-wrapper">
+                    <iframe
+                      title="M4 Carbine"
+                      frameborder="0"
+                      allowfullscreen
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                      allow="autoplay; fullscreen; xr-spatial-tracking"
+                      xr-spatial-tracking
+                      execution-while-out-of-viewport
+                      execution-while-not-rendered
+                      web-share
+                      src="https://sketchfab.com/models/079049c48d1346bdaa492ec97a8980d6/embed"
                     >
-                      M4 Carbine
-                    </a>
-                   
-                  </p>
+                    </iframe>
+                    <p
+                      style="
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin: 5px;
+                        color: #4a4a4a;
+                      "
+                    >
+                      <a
+                        href="https://sketchfab.com/3d-models/m4-carbine-079049c48d1346bdaa492ec97a8980d6?utm_medium=embed&utm_campaign=share-popup&utm_content=079049c48d1346bdaa492ec97a8980d6"
+                        target="_blank"
+                        rel="nofollow"
+                        style="font-weight: bold; color: #1caad9"
+                      >
+                        M4 Carbine
+                      </a>
+                     
+                    </p>
+                  </div>
                 </div>
               </section>
-                 <section class="caracteristicArma-inf " id="arma-Tavor">
+              <section class="caracteristicArma-inf " id="arma-Tavor">
                  <h2>Tavor </h2>
                  <div class="CA-inf-img">
                    <img src="./assets/img/army/tavorTAR21.png" alt="armaImg">
@@ -845,8 +811,8 @@
                     </div>
                     <p>El Tavor fue diseñado para mejorar las capacidades del soldado de infantería, especialmente en operaciones urbanas y combates en espacios cerrados. Es conocido por su fiabilidad en condiciones adversas y ha sido adoptado por varias fuerzas armadas en todo el mundo.</p>
                   </div>
-                </div>
-                <div class="CA-inf-descrition">
+                  </div>
+                 <div class="CA-inf-descrition">
                   <ul>
                     <li><strong>País de origen:</strong><span> 🇮🇱 Israel</span></li>
                     <li><strong>Tipo:</strong> Fusil de asalto</li>
@@ -862,15 +828,17 @@
                     
                   </ul>
                   <div class="nerdy-class"><div class="nerdyClassFinger">☝️</div>🤓</div>
-                  <a href="https://iwi.us/wp-content/uploads/2024/01/IWI-Tavor-SAR-manual.pdf" >
-                    Manual ingles 25/02/2025</a>
-                  <a href="https://es.iwi.net/iwi-tavor-rifle/tavor-tar-integral/">pagina descriptiva</a>
-                  <a href="https://www.indumil.gov.co/producto/fusil-galil-ace-21/"> mas description</a>
-                  
-                 <!-- <div class="sketchfab-embed-wrapper"> <iframe title="IWI Tavor TAR-21" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c77e303ee8c146c18b20ccc255a76bb8/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/iwi-tavor-tar-21-c77e303ee8c146c18b20ccc255a76bb8?utm_medium=embed&utm_campaign=share-popup&utm_content=c77e303ee8c146c18b20ccc255a76bb8" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> IWI Tavor TAR-21 </a></p> -->
-                </div>
-               
-              </section>
+                  <div class="CA-inf-nerdy">
+                    <a href="https://iwi.us/wp-content/uploads/2024/01/IWI-Tavor-SAR-manual.pdf" >
+                    <i class="fa-solid fa-book"></i> Manual ingles 25/02/2025</a>
+                    <a href="https://es.iwi.net/iwi-tavor-rifle/tavor-tar-integral/"><i class="fa-solid fa-book"></i> pagina descriptiva</a>
+                    <a href="https://www.indumil.gov.co/producto/fusil-galil-ace-21/"><i class="fa-solid fa-book"></i> mas description</a>
+
+                    <div class="sketchfab-embed-wrapper"> <iframe title="IWI Tavor TAR-21" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c77e303ee8c146c18b20ccc255a76bb8/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/iwi-tavor-tar-21-c77e303ee8c146c18b20ccc255a76bb8?utm_medium=embed&utm_campaign=share-popup&utm_content=c77e303ee8c146c18b20ccc255a76bb8" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> IWI Tavor TAR-21 </a></p>
+                    </div>
+                  </div>
+
+                </section>
 
 
             </section>
